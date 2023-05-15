@@ -1,0 +1,17 @@
+<div class="default-background" *ngIf="SampleSizePopupVisible" >
+</div>
+<div class="custom-popup" *ngIf="SampleSizePopupVisible">
+    <div class="custom-popup-header"><div class="alert-icon"></div></div>
+    <br>
+    <div class="custom-popup-container"><div [innerHTML]="SampleSizeErrorMsg" class="Error-Msg"></div></div>
+    <div class="close-icon-popup">
+      <img src="assets/Image/Coke_Beach_close_icon.png" width="32px;" (click)="cancelClosepopup()">
+    </div>
+    <div class="custom-popup-btn">
+    <!-- <div style="margin-right: 7%;"><button (click)="closepopup()"><img src="assets/Image/Coke_Beach_ok_icon.png" class="ok-icon">OK</button></div>
+    <div><button (click)="cancelClosepopup()"><img src="assets/Image/Coke_Beach_ok_icon.png" class="ok-icon">Cancel</button></div> -->
+
+    <div style="margin-right: 7%;"><button (click)="cancelClosepopup()"><img src="assets/Image/Coke_Beach_cancel_icon.png" class="ok-icon">Cancel</button></div>
+    <div><button (click)="closepopup()"><img src="assets/Image/Coke_Beach_proceed_icon.png" class="ok-icon">Continue</button></div>
+    </div>
+</div>

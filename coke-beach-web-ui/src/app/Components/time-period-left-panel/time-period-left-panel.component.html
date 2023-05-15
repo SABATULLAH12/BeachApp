@@ -1,0 +1,36 @@
+<div class="timpePeriodTypes">
+  <div *ngIf="!this.disabledList['YEAR']" class="timePeriodType" [ngClass]="this.activeTimeperiodType=='YEAR'?' active_time_period_type':'nonactive_time_period_type'" (click)="renderTimeperiod('YEAR')"><div class="centerBox">YEAR</div></div>
+  <div *ngIf="this.disabledList['YEAR']" class="timePeriodType timeperiodDisabled"><div class="centerBox">YEAR</div></div>
+  <div *ngIf="!this.disabledList['YTD']" class="timePeriodType" [ngClass]="this.activeTimeperiodType=='YTD'?' active_time_period_type':'nonactive_time_period_type'" (click)="renderTimeperiod('YTD')"><div class="centerBox">YTD</div></div>
+  <div *ngIf="this.disabledList['YTD']" class="timePeriodType timeperiodDisabled"><div class="centerBox">YTD</div></div>
+  <div *ngIf="!this.disabledList['12MMT']" class="timePeriodType" [ngClass]="this.activeTimeperiodType=='12MMT'?' active_time_period_type':'nonactive_time_period_type'" (click)="renderTimeperiod('12MMT')"><div class="centerBox">12MMT</div></div>
+  <div *ngIf="this.disabledList['12MMT']" class="timePeriodType timeperiodDisabled"><div class="centerBox">12MMT</div></div>
+  <div *ngIf="!this.disabledList['3MMT']" class="timePeriodType" [ngClass]="this.activeTimeperiodType=='3MMT'?' active_time_period_type':'nonactive_time_period_type'" (click)="renderTimeperiod('3MMT')"><div class="centerBox">3MMT</div></div>
+  <div *ngIf="this.disabledList['3MMT']" class="timePeriodType timeperiodDisabled"><div class="centerBox">3MMT</div></div>
+</div>
+<div class="slider-container">
+  <div class="barContainer"></div>
+  <ngx-slider class="customSlider" (userChange)="pointerChange($event)" (userChangeStart)="pointerChangeStart($event)" (userChangeEnd)="pointerChangeEnd($event)" [(value)]="value" [options]="options"></ngx-slider>
+  <div class="ticks">
+    <div class="ui-slider-pip" [ngStyle]="{'left':GetLeftPositionValue(i,arr.length)+'%'}" *ngFor="let tick of arr;let i=index">
+      <span class="ui-slider-line" title="{{tick.text}}">
+
+      </span>
+      <span class="ui-slider-label" [ngStyle]="{'visibility':(i==0||i==(arr.length-1))?'visible':'hidden'}">
+        {{tick.text}}
+      </span>
+      <span [id]="'tipLabel'+i" #tipLabel class="ui-slider-tip-label" [ngStyle]="{'opacity':(tick.isShow?1:0),'visibility':(tick.isShow?'visible':'hidden')}">{{tick.text}}</span>
+    </div>
+    <!-- <div class="tick" [ngStyle]="{'left':(i*100)/(arr.length-1)+'%'}" *ngFor="let tick of arr;let i=index">
+
+    </div> -->
+  </div>
+  <div class="dotts">
+    <div class="ui-slider-dotContainer" [ngStyle]="{'left':(i*100)/(arr.length-1)+'%'}" *ngFor="let tick of arr;let i=index">
+      <span class="ui-slider-dot" [ngStyle]="{'visibility':((i!=value && arr.length!=1)?'visible':'hidden')}">
+
+      </span>
+    </div>
+  </div>
+</div>
+

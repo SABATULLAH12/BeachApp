@@ -1,0 +1,161 @@
+<app-custom-popup [PopupVisible]="isShowPopup" [ErrorMsg]="ErrorMsg"
+    (ToggleShowPopup)="TogglePopup($event)"></app-custom-popup>
+<div id="main_geographypopupContainer" class="main-PopupContainer">
+    <div class="menuArrow"></div>
+    <div class="popupLevel">
+        <div class="popupRightShadow"></div>
+        <div class="popupLevelHeader">
+            <div class="searchContainer">
+                <div class="Search_Icon"></div>
+                <input type="text" class="searchBox centerBox" [(ngModel)]="searchText" placeholder="Search.."
+                    (keyup)="fiterdata(searchText)" autocomplete="off" spellcheck="false">
+                <div class="searchlist" *ngIf="isSearchList">
+                    <div class="searchListContainer">
+                        <div *ngFor="let item of filterData" [ngClass]="(item.isSelected)?'textContainerActive':'textContainer'">
+                            <div class="textSubContainer"
+                                (click)="getComparisonSelectionData(item.id,item.isSelectable,item.levelId>3? item.levelId-1:item.levelId,item.type,true)"
+                                title="{{item.searchText}}">{{item.searchText}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popupheaderTextContainer">
+                <div class="popupHeaderText centerBox">
+                    <b>Category</b>
+                </div>
+            </div>
+        </div>
+        <div class="popupLevelBody">
+            <div class="popupLevelBodySubContainer">
+                <div [ngClass]="{'popupItem':true, 'activeMenuItem':(item.isSelected==true)}"
+                    *ngFor="let item of levelOneData">
+                    <div (click)="getComparisonSelectionData(item.id, item.isSelectable, 1, 'CATERGORY')"
+                        class="popupItemTextContainer">
+                        <div [ngClass]="{'activeText':(checkActiveClass(item))}" class="popupText verCenterBox"
+                            title="{{item.text}}">
+                            {{item.text}}
+                        </div>
+                    </div>
+                    <div *ngIf="item.hasChild" [ngClass]="{'activeArrowContainer':(checkActiveClass(item))}"
+                        (click)="openNextLevelPopUp(item.id, 2,item.text)" class="popupItemArrowContainer">
+                        <div class="centerBox"
+                            [ngClass]="(checkActiveClass(item))?'activeNextArrowItem':'nextArrowItem'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- level2 -->
+    <div *ngIf="isLevelTwoSelected" class="popupLevel">
+        <div class="popupRightShadow"></div>
+        <div class="popupLevelHeader">
+            <div class="searchContainer"></div>
+            <div class="popupheaderTextContainer">
+                <div class="popupHeaderText centerBox">
+                    <b>Detailed Categories</b>
+                </div>
+            </div>
+        </div>
+        <div class="popupLevelBody">
+            <div class="popupLevelBodySubContainer">
+                <div [ngClass]="{'popupItem':true, 'activeMenuItem':(item.isSelected==true)}"
+                    *ngFor="let item of levelTwoFilteredData">
+                    <div (click)="getComparisonSelectionData(item.id, item.isSelectable, 2, 'DETAILED_CATERGORY')"
+                        class="popupItemTextContainer">
+                        <div [ngClass]="{'activeText':(checkActiveClass(item))}" class="popupText verCenterBox"
+                            title="{{item.text}}">
+                            {{item.text}}
+                        </div>
+                    </div>
+                    <div *ngIf="item.hasChild" [ngClass]="{'activeArrowContainer':(checkActiveClass(item))}"
+                        (click)="openNextLevelPopUp(item.id, 3, item.text)" class="popupItemArrowContainer">
+                        <div class="centerBox"
+                            [ngClass]="(checkActiveClass(item))?'activeNextArrowItem':'nextArrowItem'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- level3 Trademark-->
+    <div *ngIf="isLevelThreeSelected" class="popupLevel">
+        <div class="popupRightShadow"></div>
+        <div class="popupLevelHeader">
+            <div class="searchContainer"></div>
+            <div class="popupheaderTextContainer">
+                <div class="popupHeaderText centerBox">
+                    <b>Trademark</b>
+                </div>
+            </div>
+        </div>
+        <div class="popupLevelBody">
+            <div class="popupLevelBodySubContainer">
+                <div [ngClass]="{'popupItem':true, 'activeMenuItem':(item.isSelected==true)}"
+                    *ngFor="let item of levelThreeFilteredData">
+                    <div (click)="getComparisonSelectionData(item.id, item.isSelectable, 3, 'TRADEMARK')"
+                        class="popupItemTextContainer">
+                        <div class="popupText verCenterBox" title="{{item.text}}">
+                            {{item.text}}
+                        </div>
+                    </div>
+                    <div *ngIf="item.hasChild" class="popupItemArrowContainer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- level3 Brand-->
+    <div *ngIf="isLevelThreeSelected" class="popupLevel">
+        <div class="popupRightShadow"></div>
+        <div class="popupLevelHeader">
+            <div class="searchContainer"></div>
+            <div class="popupheaderTextContainer">
+                <div class="popupHeaderText centerBox">
+                    <b>Brand</b>
+                </div>
+            </div>
+        </div>
+        <div class="popupLevelBody">
+            <div class="popupLevelBodySubContainer">
+                <div [ngClass]="{'popupItem':true, 'activeMenuItem':(item.isSelected==true)}"
+                    *ngFor="let item of levelFourFilteredData">
+                    <div (click)="getComparisonSelectionData(item.id, item.isSelectable, 3, 'BRAND')"
+                        class="popupItemTextContainer">
+                        <div [ngClass]="{'activeText':(checkActiveClass(item))}" class="popupText verCenterBox"
+                            title="{{item.text}}">
+                            {{item.text}}
+                        </div>
+                    </div>
+                    <div *ngIf="item.hasChild" [ngClass]="{'activeArrowContainer':(checkActiveClass(item))}"
+                        (click)="openNextLevelPopUp(item.id, 4,item.text)" class="popupItemArrowContainer">
+                        <div class="nextArrowItem centerBox"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- level4-->
+    <div *ngIf="isLevelFiveSelected" class="popupLevel">
+        <div class="popupRightShadow"></div>
+        <div class="popupLevelHeader">
+            <div class="searchContainer"></div>
+            <div class="popupheaderTextContainer">
+                <div class="popupHeaderText centerBox">
+                    <b>Consumption</b>
+                </div>
+            </div>
+        </div>
+        <div class="popupLevelBody">
+            <div class="popupLevelBodySubContainer">
+                <div [ngClass]="{'popupItem':true, 'activeMenuItem':(item.isSelected==true)}"
+                    *ngFor="let item of levelFiveFilteredData">
+                    <div (click)="getComparisonSelectionData(item.id, item.isSelectable, 4, 'CONSUMPTION')"
+                        class="popupItemTextContainer">
+                        <div class="popupText verCenterBox" title="{{item.text}}">
+                            {{item.text}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

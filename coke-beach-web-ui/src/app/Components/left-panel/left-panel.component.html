@@ -1,0 +1,103 @@
+<app-custom-popup [PopupVisible]="isShowPopup"[ErrorMsg]="ErrorMsg" (ToggleShowPopup)="TogglePopup($event)"></app-custom-popup>
+<app-samplesize-popup [SampleSizePopupVisible]="isSampleSizePopup" [SampleSizeErrorMsg]="SampleSizeErrorMsg" (ToggleSamplesizeShowPopup)="ToggleSamplesizePopup($event)"></app-samplesize-popup>
+<app-data-availability></app-data-availability>
+<div class="selection-panel" [class.show_hidden_con]="is_show_all_selection">
+  <div class="slection-panel-body_Container">
+    <!--<div class="selection-panel_ctn" *ngIf="isgeography_sel_panel_ctn_active"><b>Geography:</b>{{geographyseldata}}<img class="close_icon" src="/assets/Image/close_button_icon.png"  (click)="close_geo_selection_()"></div>
+      <div class="selection-panel_ctn" *ngIf="istimeperiod_sel_panel_ctn_active"><b>Time Period:</b>{{monthvalue}}&nbsp;{{year}}<img class="close_icon" src="/assets/Image/close_button_icon.png" (click)="close_time_p_selection_()"></div>
+      <div class="selection-panel_ctn" *ngIf="isbenchmark_sel_panel_ctn_active"><b>Benchmark:</b>{{benchmarkvalue}}<img class="close_icon" src="/assets/Image/close_button_icon.png" (click)="close_bench_m_selection_()"></div>
+      <div class="selection-panel_ctn" *ngIf="iscompa_sel_panel_ctn_active"><strong>Comparison:</strong><img class="close_icon" src="/assets/Image/close_button_icon.png" ></div>
+      <div class="selection-panel_ctn" *ngIf="isfilter_sel_panel_ctn_active"><b>Filter:</b>{{filtervalue}}<img class="close_icon" src="/assets/Image/close_button_icon.png" (click)="close_filter_selection_()"></div>-->
+    <!-- <app-top-panel [geographyData]="geographyTopPanel" [timeperiodData]="timeperiodTopPanel" [benchmarkData]="benchmarkTopPanel" [comparisonData]="comparisonTopPanel" [filterData]="filterTopPanel"></app-top-panel> -->
+    <app-top-panel (closeLeftPopup)="closeAllPopup($event)"></app-top-panel>
+  </div>
+  <div class="help_menu_Container">
+    <div class="HeplMenuSubContainer">
+      <div class="show_all_selection_down_arrow" (click)="show_all_selections()" *ngIf="is_show_all_selection==false">
+      </div>
+      <div class="show_all_selection_up_arrow" (click)="show_all_selections()" *ngIf="is_show_all_selection"></div>
+    </div>
+     <div class="HeplMenuSubContainer" id="TopPanelDataAvailabilityICon"(click)="OpenDataAvailabilityPopup()">
+      <div class="DataAvailabilityiconToolTipContainer">
+        <div class="ArrowContainer"></div>
+        <div class="TextContainer">Data Availability</div>
+      </div>
+     </div>
+    <div class="HeplMenuSubContainer" id="TopPanelUserMIcon"routerLink="/UserManagement"*ngIf="UserManagementAccess" >
+      <div class="UserMIconToolTipContainer">
+        <div class="ArrowContainer"></div>
+        <div class="TextContainer">Manage Users</div>
+      </div>
+    </div>
+    <div class="HeplMenuSubContainer" id="TopPanelHeplMIcon" >
+      <div [ngClass]="(UserManagementAccess==true)? 'HelpIconToolTipContainer':'HelpIconToolTipContainer2'">
+        <div class="ArrowContainer" style="margin-left: 20%;"></div>
+        <div class="TextContainer">Help</div>
+      </div>
+    </div>
+    <div class="HeplMenuSubContainer" id="TopPanelLogoutIcon"(click)="Logout()">
+      <div class="LogoutIconToolTipContainer" >
+        <div [ngClass]="(UserManagementAccess==true)? 'LogoutToolTipArrowContainer':'LogoutToolTipArrowContainer2'"></div>
+        <div class="TextContainer">Log Out</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Left Menu -->
+<div class="sidebar">
+  <!-- <img src="assets/Image/Coke_Beach_Logo.png" class="coke-logo"> -->
+  <img src="assets/Image/Simon.png" class="coke-logo">
+  <div class="stub-item" (click)="geography()">
+    <img [src]="geoImage" class="stub-image">
+    <!-- <span class="stub-name">Geography</span> -->
+    <img [src]="geoTextImage" class="stub-name-image">
+  </div>
+  <div class="stub-item" (click)="getTimePeriodData()">
+    <img [src]="timeImage" class="stub-image">
+    <!-- <span class="stub-name">Time Period</span> -->
+    <img [src]="timePeriodTextImage" class="stub-name-image">
+  </div>
+  <div class="stub-item" (click)="benchmark()">
+    <img [src]="benchmarkImage" class="stub-image">
+    <!-- <span class="stub-name">Benchmark</span> -->
+    <img [src]="benchmarkTextImage" class="stub-name-image">
+  </div>
+  <div class="stub-item" (click)="comparison()">
+    <img [src]="compareImage" class="stub-image">
+    <!-- <span class="stub-name">Comparison</span> -->
+    <img [src]="compareTextImage" class="stub-name-image">
+  </div>
+  <div class="stub-item" (click)="filters()">
+    <img [src]="filterImage" class="stub-image">
+    <!-- <span class="stub-name stub-name-filter">Filters</span> -->
+    <img [src]="filterTextImage" class="stub-name-image"style="width:57%;">
+  </div>
+  <div (click)="checkSampleSize()" class="stub-item">
+    <img src="assets/Image/Coke_Beach_Submit.png" class="stub-image submit-btn-image">
+  </div>
+  <div (click)="resetSelection()" class="stub-item" style="top:1%;margin-top:0%;">
+    <img src="assets/Image/Coke_Beach_reset.png" class="stub-image reset-btn-image">
+  </div>
+</div>
+
+<!-- Geography -->
+<app-geography-left-panel *ngIf="isGeographyMenuOpen" [geographyMenu]="geographyMenu"></app-geography-left-panel>
+
+<!-- timeperiod -->
+<div class="Time_p" *ngIf="istime_p_selactive">
+  <div class="menuArrow"></div>
+  <app-time-period-left-panel [timePeriodArray]="timeperiodMenu"
+    [geographyId]="geographyId"></app-time-period-left-panel>
+</div>
+
+<!--benchmark_ -->
+<app-benchmark-left-panel *ngIf="isBenchmarkMenuOpen" [benchmarkMenu]="benchmarkMenu"
+  [geographyId]="geographyId"></app-benchmark-left-panel>
+
+<!-- comparison -->
+<app-comparison-left-panel *ngIf="isComaprisonMenuOpen" [comparisonMenu]="comparisonMenu"
+  [geographyId]="geographyId"></app-comparison-left-panel>
+
+<!-- filter -->
+<app-filter-left-panel *ngIf="isFilterMenuOpen" [filterMenu]="filterMenu"
+  [geographyId]="geographyId"></app-filter-left-panel>

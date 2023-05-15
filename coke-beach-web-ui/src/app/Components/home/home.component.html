@@ -1,0 +1,259 @@
+<div class="m_container">
+  <app-left-panel [isOpactiyApplied]="isOpactiyApplied" (toggleOpacity)="toggleOpacity($event)"></app-left-panel>
+
+  <div class="body-text">
+    <div class="transparentDiv" *ngIf='isOpactiyApplied' (click)="closepopup()"></div>
+    <div class="main-content">
+      <div class="description">
+        <div class="left-section-container" style="width: 28%;">
+          <div class="main-image-container">
+            <div class="imageContainer"></div>
+          </div>
+          <div class="horizontal-shadow"></div>
+          <div class="app-desc-container">
+            <p class="app-desc">With a few clicks, you can download an editable report to examine the 5 W's of beverage
+              consumption through the lens of a particular category, trademark, or brand. Demographics, consumption
+              context, and motivations are examined, along with awareness, purchase channels, and drivers of equity.</p>
+          </div>
+        </div>
+        <div class="vertical-shadow1"></div>
+        <div class="right-section-container" style="width: 71.3%;">
+          <div class="selection-instruction">
+            <span style="display:flex;width: 82%;">Please make your selections in the order shown on the left. Navigate
+              through the menus using the arrows. Your selections will be highlighted in the menus in dark red, and also
+              summarized at the top of the page. </span>
+          </div>
+          <div class="description-container">
+            <div class="desc-con-left-sec">
+              <div class="description-container-geo">
+                <img src="assets/Image/Coke_Beach_number 1.png" style="height: 2rem;">&nbsp;&nbsp;
+                <span _ngcontent-awa-c60=""
+                  style="font-family: TCCC UnityText-Light; font-size: 1.125rem; font-weight: Regular; color: #000000;">
+                  <b _ngcontent-awa-c60="">Geography:</b></span><span
+                  style="font-family: TCCC UnityText-Light; font-size: 1.125rem; font-weight: Light; color: #000000;">&nbsp;Choose
+                  one (1)</span>
+              </div>
+              <div class="description-container-tp"><img src="assets/Image/Coke_Beach_number 2.png"
+                  style="height: 2rem;">&nbsp;&nbsp;
+                <b>Time Period:</b>&nbsp;Choose one (1)
+              </div>
+              <div class="description-container-benchmark">
+                <div class="description-container-benchmark1">
+                  <img src="assets/Image/Coke_Beach_number 3.png" style="height: 2rem;">&nbsp;&nbsp;
+                  <b>Benchmark Product:</b>&nbsp;Choose one (1)
+                </div>
+                <div class="description-container-benchmark2">
+                  <div class="bar-desc"></div>
+                  <div class="benchmark-desc">This product will be the basis for stat testing in the report </div>
+                </div>
+                <div class="description-container-benchmark3">
+                  <div class="bar-desc"></div>
+                  <div class="benchmark-desc">You can choose a Category, Detailed Category, Trademark, or Brand</div>
+                </div>
+              </div>
+            </div>
+            <div class="desc-con-right-sec">
+              <div class="description-container-comparison">
+                <div class="description-container-comparison1">
+                  <img src="assets/Image/Coke_Beach_number 4.png" style="height: 2rem;">&nbsp;&nbsp;
+                  <b>Comparison Products:</b>&nbsp;Choose up to six (6)
+                </div>
+                <div class="description-container-comparison2">
+                  <div class="bar-desc"></div>
+                  <div class="benchmark-desc" style="width:94%"> These products will be stat tested against your
+                    Benchmark Product (you should not select your Benchmark Product again here) </div>
+                </div>
+                <div class="description-container-comparison3">
+                  <div class="bar-desc"></div>
+                  <div class="benchmark-desc" style="width:90%"> You can choose any combination of Categories, Detailed
+                    Categories, Trademarks, and/or Brands</div>
+                </div>
+              </div>
+              <div class="description-container-filter1">
+                <div class="description-container-filter2">
+                  <img src="assets/Image/Coke_Beach_number 5.png" style="height: 2rem;">&nbsp;&nbsp;
+                  <b>Filters:</b>&nbsp;Choose any filters you'd like to apply to the report
+                </div>
+                <div class="description-container-filter3">
+                  <div class="bar-desc" style="height:46%; margin-top: 1.4%;"></div>
+                  <div class="benchmark-desc" style="width: 94%; margin-top: 0.4%;"> This is optional </div>
+                </div>
+              </div>
+              <div class="help-container">
+                <a href="{{VideoLink}}" target="_blank" class="video-icon"></a>
+                <div class="help-text-container"><b>Need assistance</b><span style="font-family:'TCCC UnityText-Regular';">?</span>&nbsp;Click on SIMON for a helpful video</div>
+                <!-- <div class="help-text-container"><span style="font-weight: bold;">Need assistance?</span>Click on SIMON for a helpful video</div> -->
+              </div>
+              <!-- <div class="description-container-filter">
+                <div><img src="assets/Image/Coke_Beach_number 5.png" style="height: 2rem;"></div>
+                <div>
+                  <p style="padding-top: 0.6%; display: flex; width: 93%;">&nbsp;&nbsp;<b>Filters:</b>&nbsp;Choose any
+                    filters you'd like to apply to the report. This is optional </p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="horizontal-shadow1"></div>
+      <div class="box-container">
+        <div class="box">
+          <img src="assets/Image/Coke_Beach_Who_icon.png" class="box-image" style="left: 1%;">
+          <span class="box-text" style="color : #4ABABA;">WHO</span>
+          <span class="box-sub-text" style="color : #4ABABA;">Drinker Demographics</span>
+          <img src="assets/Image/Coke_Beach_Shadow_01.png" class="box-line-shadow">
+          <div class="static-container-parent">
+            <div class="static-container-text">Percentage of drinkers by:</div>
+            <div class="static-text-container-white">
+              <div class="bar"></div>
+              <div class="static-text-Container">
+                <div class="static-text">Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="bar1"></div>Age
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="bar2"></div>SEC</div>
+              </div>
+            </div>
+            <!-- <div class="static-text-container-gray">
+              <div class="bar"></div>
+              <div class="static-text-Container">
+                <div class="static-text">Age</div>
+              </div>
+            </div>
+            <div class="static-text-container-white">
+              <div class="bar"></div>
+              <div class="static-text-Container">
+                <div class="static-text">SEC</div>
+              </div>
+            </div> -->
+            <div class="static-text-container-gray">
+              <div class="bar"></div>
+              <div class="static-text-Container">
+                <div class="static-text">Household size &nbsp;&nbsp;&nbsp;&nbsp;<div class="bar3"></div>Kids</div>
+              </div>
+            </div>
+            <!-- <div class="static-text-container-white">
+              <div class="bar"></div>
+              <div class="static-text-Container">
+                <div class="static-text">Kids</div>
+              </div>
+            </div> -->
+            <div class="static-text-container-white">
+              <div class="bar"></div>
+              <div class="static-text-Container">
+                <div class="static-text">Ethnicity (US only)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="assets/Image/Coke_Beach_What_icon.png" class="box-image">
+          <span class="box-text" style=" color : #90A860;">WHAT</span>
+          <span class="box-sub-text" style=" color : #90A860;">Consumption Activity</span>
+          <img src="assets/Image/Coke_Beach_Shadow_01.png" class="box-line-shadow">
+          <div class="static-container-parent">
+            <div class="static-container-text">Percentage of drinks by:</div>
+            <div class="static-text-container-white">
+              <div class="bar"></div>
+              <!-- <h6 class="static-text">Location Group</h6> -->
+              <div class="static-text-Container">
+                <div class="static-text">Activity</div>
+              </div>
+            </div>
+            <div class="static-text-container-gray">
+              <div class="bar"></div>
+              <!-- <h6 class="static-text">Location High Level Nets</h6> -->
+              <div class="static-text-Container">
+                <div class="static-text">Detailed activity</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="assets/Image/Coke_Beach_When_icon.png" class="box-image" style="left:-2%">
+          <span class="box-text" style="color : #FC9900;">WHEN</span>
+          <span class="box-sub-text" style="color : #FC9900;">Time of Consumption</span>
+          <img src="assets/Image/Coke_Beach_Shadow_01.png" class="box-line-shadow">
+          <div class="static-container-parent">
+            <div class="static-container-text">Percentage of drinks by:</div>
+            <div class="static-text-container-white">
+              <div class="bar"></div>
+              <!-- <h6 class="static-text">Motivations Detailed</h6> -->
+              <div class="static-text-Container">
+                <div class="static-text">Day of the week</div>
+              </div>
+            </div>
+            <div class="static-text-container-gray">
+              <div class="bar"></div>
+              <!-- <h6 class="static-text">Motivations Detailed</h6> -->
+              <div class="static-text-Container">
+                <div class="static-text">Daypart</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="assets/Image/Coke_Beach_Where_icon.png" class="box-image">
+          <span class="box-text" style="color : #FF4B00;">WHERE</span>
+          <span class="box-sub-text" style="color : #FF4B00;">Consumption Location</span>
+          <img src="assets/Image/Coke_Beach_Shadow_01.png" class="box-line-shadow">
+          <div class="static-container-parent">
+            <div class="static-container-text">Percentage of drinks by:</div>
+            <div class="static-text-container-white">
+              <div class="bar"></div>
+              <!-- <h6 class="static-text">Equity, Familiarity</h6> -->
+              <div class="static-text-Container">
+                <div class="static-text">At home / away from home</div>
+              </div>
+            </div>
+            <div class="static-text-container-gray">
+              <div class="bar"></div>
+              <!-- <h6 class="static-text">Consideration</h6> -->
+              <div class="static-text-Container">
+                <div class="static-text">Away from home detail</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="assets/Image/Coke_Beach_Why_icon.png" class="box-image">
+          <span class="box-text" style=" color : #FF0000;">WHY</span>
+          <span class="box-sub-text" style=" color : #FF0000;">Reasons for Drinking</span>
+          <img src="assets/Image/Coke_Beach_Shadow_01.png" class="box-line-shadow">
+          <div class="static-container-parent">
+            <div class="static-container-text">Percentage of drinks by:</div>
+            <div class="static-text-container-white">
+              <div class="bar"></div>
+              <!-- <h6 class="static-text">Equity, Familiarity</h6> -->
+              <div class="static-text-Container">
+                <div class="static-text">Primary motivations</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="BottomTextcontainer">
+
+        <ul class="bottom-section">
+          <!-- <li style="color : #4ABABA;">CONSUMPTION PYRAMID</li> -->
+          <li style="color : #90A860;">DRIVERS OF EQUITY</li>
+          <li style="color : #FC9900;">AWARENESS</li>
+          <li style="color : #FF4B00; position: relative;">OCCASIONS<img style="display: none;" src="/assets/Image/Coke_Beach_Coming_Soon.png" class="occasion-text"></li>
+          <li style="color : #FF0000;">PURCHASE CHANNEL</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <!-- last| -->
+</div>
+
+<div class="fullPageTransparentDiv" *ngIf="!isLeftPanelDataLoaded">
+
+</div>
+
+<div class="loader" *ngIf="!isLeftPanelDataLoaded">
+
+</div>

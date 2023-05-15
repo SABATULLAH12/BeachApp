@@ -1,0 +1,24 @@
+<div class="default-background" *ngIf="PopupVisible"></div>
+<div class="main-container"*ngIf="PopupVisible">
+    <div class="close-btn"(click)="ClosePopup()"></div>
+    <div class="data-table-container">
+        <div class="table-header-container">
+            <div class="header-top-border"></div>
+            <div class="table-header">
+                <div class="Column_Name">Country Name</div>
+                <div class="Column_Name">Vendor</div>
+                <div class="Column_Name">Months Of Data</div>
+                <div class="Column_Name">Latest Available Month</div>
+            </div>
+            <div class="header-bottom-border"></div>
+        </div>
+        <div class="table-data-row-container">
+            <div class="table-data-row" *ngFor="let item of DataTable">
+                <div class="table-data">{{item.country_Name}}</div>
+                <div class="table-data">{{item.vendor}}</div>
+                <div class="table-data">{{item.months_Of_Data}}</div>
+                <div class="table-data">{{item.latestMonth}}</div>
+            </div>
+        </div>
+    </div>
+</div>

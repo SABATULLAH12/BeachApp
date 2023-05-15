@@ -1,0 +1,63 @@
+<div class="Selection_Summary_Text" *ngIf="geographyData.id!=undefined">
+  <div class="Selection_Summary_Text_Container">
+  </div>
+</div>
+<div class="selection-panel_ctn" *ngIf="geographyData.id!=undefined">
+  <div class="selection-panel-text-container">
+    <div class="selection-panel-text">
+      <b>Geography: </b>{{geographyData.detailedText}}&nbsp;
+    </div>
+  </div>
+  <div class="selection-panel-arrow-container">
+    <img class="close_icon" src="/assets/Image/close_button_icon.png" (click)="delete_geo_selection(geographyData.id)">
+  </div>
+
+</div>
+
+<div class="selection-panel_ctn" *ngIf="timeperiodData.id!=undefined">
+  <div class="selection-panel-text-container">
+    <div class="selection-panel-text">
+      <b>Time Period: </b>{{timeperiodData.text}}&nbsp;
+    </div>
+  </div>
+  <div class="selection-panel-arrow-container">
+    <img class="close_icon" src="/assets/Image/close_button_icon.png" (click)="delete_timeperiod_selection(timeperiodData.id)">
+  </div>
+
+</div>
+
+<div class="selection-panel_ctn" *ngIf="benchmarkData.id!=undefined">
+  <div class="selection-panel-text-container">
+    <div class="selection-panel-text">
+      <b>Benchmark: </b>{{benchmarkData.text}} - {{benchmarkData.consumptionName}}&nbsp;
+    </div>
+  </div>
+  <div class="selection-panel-arrow-container">
+    <img class="close_icon" src="/assets/Image/close_button_icon.png" (click)="delete_benchmark_selection(benchmarkData.id)">
+  </div>
+
+</div>
+
+<div class="selection-panel_ctn" *ngFor="let item of comparisonData;let id=index;">
+  <div class="selection-panel-text-container">
+    <div class="selection-panel-text">
+      <span *ngIf="id==0"><b>Comparisons: </b></span>{{item.text}} - {{item.consumptionName}}<span> &nbsp;</span>
+    </div>
+  </div>
+  <div class="selection-panel-arrow-container">
+    <img class="close_icon" src="/assets/Image/close_button_icon.png" (click)="delete_comparison_selection(id)">
+  </div>
+
+</div>
+
+<div class="selection-panel_ctn" *ngFor="let item of filterData;let id=index;">
+  <div class="selection-panel-text-container">
+    <div class="selection-panel-text">
+      <span *ngIf="id==0"><b>Filter: </b></span>{{item.text}}<span *ngIf="item.type=='BeverageFilter'"> - {{item.consumptionName}}</span><span> &nbsp;</span>
+    </div>
+  </div>
+  <div class="selection-panel-arrow-container">
+    <img class="close_icon" src="/assets/Image/close_button_icon.png" (click)="delete_filter_selection(id)">
+  </div>
+
+</div>

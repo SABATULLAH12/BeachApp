@@ -1,0 +1,32 @@
+<div class="Right_Section">
+    <div _ngcontent-rgo-c20="" class="Left_Shadow"></div>
+    <div class="Search_Box_Container">
+        <div class="Search_Icon"></div>
+        <div class="Search_Box">
+            <input type="text" [(ngModel)]="searchtext"(keyup)="FilterData(searchtext)" Class="Search_Input" placeholder="Search by Name / Email-ID...">
+        </div>
+        <div [ngClass]="IsExportEnable==false?'Excel_Export_Btn_disable':'Excel_Export_Btn_Container'">
+            <div class="Excel_Export_Btn" (click)="exportToExcel()">
+                <span Class="Btn_Text">Export</span>
+            </div>
+        </div>
+    </div>
+    <div class="Users_Data_Table">
+        <div class="Table_Header">
+            <div class="Header_Item"style="width:10%"><div Class="Column_Name">Sr. No.</div></div>
+            <div class="Header_Item"style="width:21%"><div Class="Column_Name"style="width:80%">Name</div><div class="Sort_Icon"(click)="Datasorting('name')"style="width:20%"></div></div>
+            <div class="Header_Item"style="width:27%"><div Class="Column_Name"style="width:84%">Email ID</div><div class="Sort_Icon" (click)="Datasorting('email')"style="width:16%"></div></div>
+            <div class="Header_Item"style="width:20%"><div Class="Column_Name"style="width:78%">Role</div><div class="Sort_Icon"(click)="Datasorting('role')"style="width:22%"></div></div>
+            <div class="Header_Item"style="width:22%"><div Class="Column_Name"style="width:80%">No Of Report Downloaded</div><div class="Sort_Icon" (click)="Datasorting('NoOfReport')"style="width:20%"></div></div>
+        </div>
+        <div class="Table_Data_Container">
+            <div class="Table_Row"*ngFor="let item of MainUserDataReportCount;let i=index">
+                <div class="Table_Data"style="width:10%; text-align:center;">{{i+1}}</div>
+                <div class="Table_Data"style="width:21%">{{item.name}}</div>
+                <div class="Table_Data"style="width:27%">{{item.emailId}}</div>
+                <div class="Table_Data"style="width:20%;">{{item.role}}</div>
+                <div class="Table_Data Edit_Icon"style="width:22%; text-align:center;">{{item.reportDownloadCount}}</div>
+            </div>
+        </div>
+    </div>
+</div>

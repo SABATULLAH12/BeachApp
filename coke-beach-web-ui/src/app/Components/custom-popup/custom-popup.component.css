@@ -1,0 +1,99 @@
+.custom-popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 21.5rem;
+    width: 36rem;
+    background: #FFFFFF;
+    border-radius: 1.0625rem;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 10%);
+    transform: translate(-50%, -50%);
+    z-index: 1111111111111111;
+    color: #000000;
+}
+
+.custom-popup-header{
+    position: relative;
+    width: 100%;
+    color: red;
+    height: 37%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7%;
+}
+.alert-icon{
+    height: 104%;
+    width: 18%;
+    background-image: url(/assets/Image/Coke_Beach_Alert_icon.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.ok-icon{
+    height: 71%;
+    width: 23%;
+    margin-right: 14%;
+}
+.custom-popup-container{
+    position: relative;
+    width: 84%;
+    text-align: center;
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5px Solid #9B9B9B;
+    padding-top: 1.5%;
+    left: 8%;
+}
+.custom-popup-btn{
+    position: relative;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background : linear-gradient(90deg, rgba(225, 31, 38, 1) 0%, rgba(207, 30, 36, 1) 31.5%, rgba(159, 26, 30, 1) 94.66%, rgba(155, 26, 30, 1) 100%);
+    width : 7.5625rem;
+    height : 2.25rem;
+    border-radius : 0.5rem;
+    border : 2px solid #FFFFFF;
+    box-shadow : 0px 3px 5px rgba(0, 0, 0, 0.1);
+    font-family : TCCC-UnityText;
+    font-weight : bold;
+    font-size : 1.125rem;
+    color : #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Error-Msg{
+    font-family: TCCC UnityText-Regular;
+    font-size: 1.375rem;
+    color: #000000;
+    overflow: scroll;
+    height: 108%;
+}
+.default-background{
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    float: left;
+    opacity: 0.7;
+    z-index: 111111;
+    top: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0.3vw;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }

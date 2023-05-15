@@ -1,0 +1,9 @@
+<div class="default-background" *ngIf="PopupVisible" >
+</div>
+<div class="custom-popup" *ngIf="PopupVisible">
+    <div class="custom-popup-header"><div class="alert-icon"></div></div>
+    <br>
+    <div class="custom-popup-container"><div [innerHTML]="ErrorMsg" class="Error-Msg"></div></div>
+       
+    <div class="custom-popup-btn"><button (click)="closepopup()"><img src="assets/Image/Coke_Beach_ok_icon.png" class="ok-icon">OK</button></div>
+</div>

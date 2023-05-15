@@ -1,0 +1,165 @@
+<div class="main-PopupContainer">
+  <div class="menuArrow"></div>
+  <!-- Level 1 -->
+  <div class="popupLevel">
+      <div class="popupRightShadow"></div>
+    <div class="popupLevelHeader">
+      <div class="popupHeaderText centerBox">
+          <b>{{levelOneHeader}}</b>
+        </div>
+    </div>
+    <div class="popupLevelBody">
+      <div class="popupLevelBodySubContainer">
+        <div [ngClass]="{'popupItem':true, 'activeMenuItem':(item.isSelected==true)}" *ngFor="let item of levelOneData">
+          <div
+            (click)="openNextLevelPopUp(item.id, 2)"
+            class="popupItemTextContainer"
+          >
+            <div class="popupText verCenterBox"  [ngClass]="{'activeText':(checkActiveClass(item))}" >
+              {{ item.text }}
+            </div>
+          </div>
+          <div
+            *ngIf="item.hasChild" [ngClass]="{'activeArrowContainer':(checkActiveClass(item))}"
+            (click)="openNextLevelPopUp(item.id, 2,item.text)"
+            class="popupItemArrowContainer"
+          >
+            <div class="centerBox" [ngClass]="(checkActiveClass(item))?'activeNextArrowItem':'nextArrowItem'"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Level 2 -->
+  <div *ngIf="isLevelTwoSelected" class="popupLevel">
+      <div class="popupRightShadow"></div>
+    <div class="popupLevelHeader">
+      <div class="popupHeaderText centerBox">
+          <b>{{levelTwoHeader}}</b>
+        </div>
+    </div>
+    <div class="popupLevelBody">
+      <div class="popupLevelBodySubContainer">
+        <div [ngClass]="{'popupItem':true, 'activeMenuItem':(item.isSelected==true)}" *ngFor="let item of levelTwoFilteredData">
+          <div (click)="getFilterSelectionData(item.id, item.isSelectable, 2)" class="popupItemTextContainer">
+            <div class="popupText verCenterBox"  [ngClass]="{'activeText':(checkActiveClass(item))}"  title="{{item.text}}">
+              {{item.text}}
+            </div>
+          </div>
+          <div
+            *ngIf="item.hasChild" [ngClass]="{'activeArrowContainer':(checkActiveClass(item))}"
+            (click)="openNextLevelPopUp(item.id, 3,item.text)"
+            class="popupItemArrowContainer"
+          >
+            <div class="centerBox" [ngClass]="(checkActiveClass(item))?'activeNextArrowItem':'nextArrowItem'"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Level 3 -->
+  <div *ngIf="isLevelThreeSelected" class="popupLevel">
+      <div class="popupRightShadow"></div>
+    <!-- <div class="popupLevelHeader"></div> -->
+    <div class="popupLevelHeader">
+      <div class="popupHeaderText centerBox">
+        <b>{{levelThreeHeader}}</b>
+        </div>
+    </div>
+    <div class="popupLevelBody">
+      <div class="popupLevelBodySubContainer">
+        <div [ngClass]="{'popupItem':true, 'activeMenuItem':(item.isSelected==true)}" *ngFor="let item of levelThreeFilteredData">
+          <div
+            (click)="getFilterSelectionData(item.id, item.isSelectable, 3, 'NA')"
+            class="popupItemTextContainer">
+            <div class="popupText verCenterBox"[ngClass]="{'activeText':(checkActiveClass(item))}"  title="{{item.text}}">
+              {{ item.text }}
+            </div>
+          </div>
+          <div
+            *ngIf="item.hasChild"[ngClass]="{'activeArrowContainer':(checkActiveClass(item))}"
+            (click)="openNextLevelPopUp(item.id, 4,item.text)"
+            class="popupItemArrowContainer"
+          >
+            <div class="centerBox" [ngClass]="(checkActiveClass(item))?'activeNextArrowItem':'nextArrowItem'"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Level 4 -->
+  <div *ngIf="isLevelFourSelected" class="popupLevel">
+      <div class="popupRightShadow"></div>
+    <!-- <div class="popupLevelHeader"></div> -->
+    <div class="popupLevelHeader">
+      <div class="popupHeaderText centerBox">
+        <b>{{levelFourHeader}}</b>
+        </div>
+    </div>
+    <div class="popupLevelBody">
+      <div class="popupLevelBodySubContainer">
+        <div [ngClass]="{'popupItem':true, 'activeMenuItem':(item.isSelected==true)}"  *ngFor="let item of levelFourFilteredData">
+          <div
+            (click)="getFilterSelectionData(item.id, item.isSelectable, 4, 'TRADEMARK')"
+            class="popupItemTextContainer"
+          >
+            <div [ngClass]="{'activeText':(checkActiveClass(item))}"  class="popupText verCenterBox" title="{{item.text}}">
+              {{ item.text }}
+            </div>
+          </div>
+          <div
+            *ngIf="item.hasChild" [ngClass]="{'activeArrowContainer':(checkActiveClass(item))}"
+            (click)="openNextLevelPopUp(item.id, 5,item.text)"
+            class="popupItemArrowContainer"
+          >
+            <div class="centerBox" [ngClass]="(checkActiveClass(item))?'activeNextArrowItem':'nextArrowItem'"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Level 5-->
+  <div *ngIf="isLevelFourSelected" class="popupLevel">
+      <div class="popupRightShadow"></div>
+    <!-- <div class="popupLevelHeader"></div> -->
+    <div class="popupLevelHeader">
+      <div class="popupHeaderText centerBox">
+        <b>{{levelFiveHeader}}</b>
+        </div>
+    </div>
+    <div class="popupLevelBody">
+      <div class="popupLevelBodySubContainer">
+        <div [ngClass]="{'popupItem':true,'activeMenuItem':(item.isSelected==true)}" *ngFor="let item of levelFiveFilteredData">
+          <div (click)="getFilterSelectionData(item.id, item.isSelectable, 4, 'BRAND')" class="popupItemTextContainer">
+            <div class="popupText verCenterBox" [ngClass]="{'activeMenuItem':(item.isSelected==true)}"  title="{{item.text}}">
+              {{item.text}}
+            </div>
+          </div>
+          <div *ngIf="item.hasChild" [ngClass]="{'activeArrowContainer':(checkActiveClass(item))}" class="popupItemArrowContainer" (click)="openNextLevelPopUp(item.id, 5,item.text)">
+            <div class="centerBox" [ngClass]="(checkActiveClass(item))?'activeNextArrowItem':'nextArrowItem'"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="isLevelSixSelected" class="popupLevel">
+    <div class="popupRightShadow"></div>
+    <div class="popupLevelHeader">
+      <div class="popupHeaderText centerBox">
+        <b>{{levelSixHeader}}</b>
+        </div>
+    </div>
+    <div class="popupLevelBody">
+      <div class="popupLevelBodySubContainer">
+        <div [ngClass]="{'popupItem':true,'activeMenuItem':(item.isSelected==true)}" *ngFor="let item of levelSixFilteredData">
+          <div (click)="getFilterSelectionData(item.id, item.isSelectable, 5, 'CONSUMPTION')" class="popupItemTextContainer">
+            <div class="popupText verCenterBox" [ngClass]="{'activeMenuItem':(item.isSelected==true)}"  title="{{item.text}}">
+              {{item.text}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,745 @@
+
+.sidebar {
+    height: 100%;
+    position: absolute;
+    background-image: url('/assets/Image/Coke_Beach_LeftPanel_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 7%;
+    height: 98%;
+    top: 1%;
+    left: 0.5%;
+}
+
+.sidebar div {
+    font-size: 15px;
+    display: block;
+}
+
+.coke-logo {
+    width: 90%;
+    margin-left: 0.25rem;
+    padding-top: 0.5rem;
+}
+
+.stub-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17%;
+}
+
+.stub-name {
+    font-family: TCCC UnityText-Regular;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.stub-name-filter {
+
+}
+
+.stub-image {
+    width: 55%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit-btn-image {
+    width: 100% !important;
+    margin-left: 0rem !important;
+    margin-top: 0.5rem;
+}
+.sidebar_con{
+
+    position: fixed;
+    left: 111.5px;
+    background: #FFFFFF;
+    width: 13.5625rem;
+    height: 16.1rem;
+    border-radius: 0px 0.5rem 0.5rem 0px;
+    border-right: 3px solid #99191D;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+    display: inline-grid;
+    row-gap: 5px;
+    z-index: 1;
+
+}
+.arw{
+    background-image: url(/assets/Image/Coke_Beach_Left_panel_arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    width: 12px;
+    height: 29px;
+    top: 35px;
+    left: -12px;
+}
+.ctn{
+    margin-left: 8px;
+    text-align: left;
+    background: #F7F7F7;
+    width: 11.375rem;
+    height: 2.75rem;
+    border-radius: 0.3125rem;
+    font-family: TCCC UnityText-Regular;
+    font-size: 1rem;
+    color: #000000;
+    padding-left: 15px;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+
+
+}
+.Geography-ctn{
+    margin-left: 8px;
+    text-align: left;
+    background: #F7F7F7;
+    width: 11.375rem;
+    height: 2.75rem;
+    border-radius: 0.3125rem;
+    font-family: TCCC UnityText-Regular;
+    font-size: 1rem;
+    color: #000000;
+    padding-left: 15px;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -26px;
+
+
+}
+/* .Geography-ctn:hover {
+
+    background : linear-gradient(90deg, rgba(225, 31, 38, 1) 0%, rgba(207, 30, 36, 1) 31.5%, rgba(159, 26, 30, 1) 94.66%, rgba(155, 26, 30, 1) 100%);
+  height : 2.75rem;
+  border-radius : 0.3125rem;
+  color: white;
+  } */
+.ctn:hover {
+
+  background : linear-gradient(90deg, rgba(225, 31, 38, 1) 0%, rgba(207, 30, 36, 1) 31.5%, rgba(159, 26, 30, 1) 94.66%, rgba(155, 26, 30, 1) 100%);
+  height : 2.75rem;
+  border-radius : 0.3125rem;
+  color: white;
+}
+
+.textdata{
+    width: 90%;
+}
+.plusArrow{
+
+    background-image: url(/assets/Image/Arrow.png);
+    width: 25px;
+    margin-top: 9px;
+    background-repeat: no-repeat;
+    background-size: 8px 11px;
+}
+.nextArrow{
+    background-image: url(/assets/Image/Arrow.png);
+    width: 25px;
+    margin-top: 9px;
+    background-repeat: no-repeat;
+    background-size: 8px 11px;
+}
+.s_filter{
+    position: fixed;
+    left: 111.5px;
+    top: 268px;
+    background: #FFFFFF;
+    width: 13.5625rem;
+    height: 18.75rem;
+    border-radius: 0px 0.5rem 0.5rem 0px;
+    border-right: 3px solid #99191D;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+    display: inline-grid;
+    z-index: 1;
+}
+.Benchmark_{
+    position: fixed;
+    left: 111.5px;
+    top: 20px;
+    background: #FFFFFF;
+    width: 17.5625rem;
+    height: 32.75rem;
+    border-radius: 0px 0.5rem 0.5rem 0px;
+    border-right: 3px solid #99191D;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+    display: inline-grid;
+    z-index: 1;
+}
+.Benchmark_ctn{
+    margin-left: 8px;
+    text-align: left;
+    background: #F7F7F7;
+    width: 15.5rem;
+    height: 1.985rem;
+    border-radius: 0.3125rem;
+    font-family: TCCC UnityText-Regular;
+    font-size: 13px;
+    color: #000000;
+    padding-left: 15px;
+    padding-top: 3px;
+    display: flex;
+    flex-direction: row;
+}
+.Benchmark_ctn:hover {
+
+  background : linear-gradient(90deg, rgba(225, 31, 38, 1) 0%, rgba(207, 30, 36, 1) 31.5%, rgba(159, 26, 30, 1) 94.66%, rgba(155, 26, 30, 1) 100%);
+  height : 1.985rem;
+  border-radius : 0.3125rem;
+  color: white;
+  }
+.Benchmark_D_cat{
+  position: absolute;
+  left: 270px;
+  height: 100%;
+  width: 212px;
+  background: #FFFFFF;
+  border-radius: 0px 0.5rem 0.5rem 0px;
+  border-right: 1px solid #99191D;
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+}
+.Benchmark_Trademark_cat{
+  position: absolute;
+  left: 474px;
+  height: 100%;
+  width: 181px;
+  background: #FFFFFF;
+  border-radius: 0px 0.5rem 0.5rem 0px;
+  border-right: 1px solid #99191D;
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+  }
+.Benchmark_Trademark_ctn{
+  margin-left: 8px;
+  text-align: left;
+  background: #F7F7F7;
+  width: 9.375rem;
+  height: 2.75rem;
+  border-radius: 0.3125rem;
+  font-family: TCCC UnityText-Regular;
+  font-size: 1rem;
+  color: #000000;
+  padding-left: 15px;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: row;
+
+  }
+.categoty{
+  display: inline-grid;
+  row-gap: 9px;
+  padding-top: 20px;
+}
+.Benchmark_brand{
+  position: absolute;
+  left: 644px;
+  height: 100%;
+  width: 319px;
+  background: #FFFFFF;
+  border-radius: 0px 0.5rem 0.5rem 0px;
+  border-right: 1px solid #99191D;
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+}
+.Benchmark_brand_ctn{
+  margin-left: 8px;
+  text-align: left;
+  background: #F7F7F7;
+  width: 18.105rem;
+  height: 2.75rem;
+  border-radius: 0.3125rem;
+  font-family: TCCC UnityText-Regular;
+  font-size: 1rem;
+  color: #000000;
+  padding-left: 15px;
+  padding-top: 9px;
+  display: flex;
+  flex-direction: row;
+}
+.B_brand_{
+  overflow: scroll;
+  height: 100%;
+  display: inline-grid;
+  row-gap: 9px;
+}
+.B_Consumption_con{
+  position: absolute;
+  left: 953px;
+  height: 100%;
+  width: 161px;
+  background: #FFFFFF;
+  border-radius: 0px 0.5rem 0.5rem 0px;
+  border-right: 3px solid #99191D;
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+}
+.B_Consumption_ctn{
+  margin-left: 8px;
+  text-align: left;
+  background: #F7F7F7;
+  width: 8.375rem;
+  height: 2.75rem;
+  border-radius: 0.3125rem;
+  font-family: TCCC UnityText-Regular;
+  font-size: 1rem;
+  color: #000000;
+  padding-left: 15px;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: row;
+}
+.Benchmark_brand_ctn:hover {
+  background : linear-gradient(90deg, rgba(225, 31, 38, 1) 0%, rgba(207, 30, 36, 1) 31.5%, rgba(159, 26, 30, 1) 94.66%, rgba(155, 26, 30, 1) 100%);
+  height : 2.75rem;
+  border-radius : 0.3125rem;
+  color: white;
+}
+.Time_p{
+  position: fixed;
+  left: 111.5px;
+  top: 126px;
+  background: #FFFFFF;
+  width: 26.5625rem;
+  height: 9.95rem;
+  border-radius: 0px 0.5rem 0.5rem 0px;
+  border-right: 3px solid #99191D;
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.time-selector-container{
+  display: flex;
+  gap: 1rem;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+.slider{
+  width: 306px;
+  margin: 10px;
+  position: relative;
+  top: 0px;
+  font-family: TCCC UnityText-Regular;
+  font-size: 0.6875rem;
+  color: #000000;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 0.3vw;
+}
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+.time-selector{
+  flex-grow: 1;
+  background: rgba(239, 239, 239, 1);
+  width: 5rem;
+  height: 2.25rem;
+  border-radius: 0.375rem;
+  font-family: TCCC UnityText-Regular;
+  font-size: 1rem;
+  padding-left: 9px;
+  padding-top: 6px;
+  padding-right: 9px;
+  text-transform: uppercase;
+  color: #707070;
+    }
+.ngx-slider::ng-deep .ngx-slider-pointer {
+
+  background-color: transparent;
+  border-radius: 0px;
+  background-image: url('/assets/Image/Coke_Beach_slider_bottle_icon.png');
+  background-size: 38px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 37px;
+  height: 48px;
+  top: -32px;
+
+}
+.ngx-slider::ng-deep .ngx-slider-inner-tooltip{
+  height: 100%;
+  position: relative;
+  top: 50px;
+  font-family: TCCC UnityText-Regular;
+  font-size: 0.6875rem;
+  color: #000000!important;
+}
+.ngx-slider::ng-deep .ngx-slider-pointer:after{
+  width: 0px!important;
+}
+.ngx-slider::ng-deep .ngx-slider-tick {
+  text-align: center;
+  cursor: pointer;
+  width: 4px;
+  height: 4px;
+  background: #aca9aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 6.3px;
+  left: 8px;
+  margin-left: 11px;
+}
+.ngx-slider::ng-deep .ngx-slider-bar {
+  left: 0;
+  width: 100%;
+  height: 11px;
+  z-index: 1;
+  background: #F4F4F4;
+  border-color: #F4F4F4;
+  border-radius: 2px;
+}
+.selection-panel{
+  position: relative;
+  /* left: 117px; */
+  width: 90%;
+  /* height: 38px; */
+  display: flex;
+  column-gap: 8px;
+  /* padding: 5px; */
+  height: 4%;
+  padding-top: 0.6%;
+  box-sizing: content-box;
+  padding-bottom: 0.4%;
+  padding-left: 0.5%;
+  padding-bottom: 0.5%;
+  left: 8.5%;
+}
+.selection-panel_ctn{
+  width: revert;
+  background: rgba(255, 255, 255, 0.45);
+  height: 2.1875rem;
+  border-radius: 0.5625rem;
+  font-family: TCCC UnityText-Medium;
+  font-size: 14px;
+  color: #000000;
+  padding-left: 6px;
+  padding-top: 6px;
+  padding-right: 26px;
+}
+.time-selector-container_{
+  display: flex;
+  column-gap: 37px;
+  position: relative;
+  top: -15px;
+}
+  .time-selector_{
+    background: rgb(216 214 214);
+    width: -3rem;
+    width: 1.5px;
+    height: 5px;
+    position: relative;
+    left: 30px;
+
+  }
+    .close_icon{
+      width: 12px;
+      height: 12px;
+      position: relative;
+      display: flex;
+      left: 104%;
+      top: -71%;
+    }
+/* new */
+.benchmark_m_container{
+  position: fixed;
+  left: 111.5px;
+  top: 75px;
+  background: #d08f8f;
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+  display: flex;
+  column-gap: 10px;
+  }
+  .benchmark_c_ctn_{
+   background:#FFFFFF;
+   /* width: 20%; */
+   border-radius: 0px 0.5rem 0.5rem 0px;
+   border-right: 2px solid #99191D;
+   box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+  }
+  .benchmark_cat_ctn{
+
+    width: 25%!important;
+  }
+  .benchmark_D_cat_ctn{
+    /* width: 19%; */
+    position: relative;
+    left: -17px;
+    width: 16%;
+  }
+  .benchmark_trademark_ctn_{
+  position: relative;
+  left: -34px;
+  width: 14%;
+  }
+  .benchmark_brand_ctn_{
+  position: relative;
+  left: -51px;
+  width: 25%;
+  display: inline-grid;
+  padding-right: 12px;
+  }
+  .benchmark_consumption_ctn_{
+    width: 12%;
+    position: relative;
+    left: -5.4%;
+  }
+  .filter_level2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 98%;
+    background: #FFFFFF;
+    border-radius: 0px 0.5rem 0.5rem 0px;
+    border-right: 3px solid #99191D;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+    display: inline-grid;
+    row-gap: 3%;
+    overflow: scroll;
+    padding-top: 19%;
+  }
+  .filter_level2_cont{
+    margin-left: 8px;
+    text-align: left;
+    background: #F7F7F7;
+    width: 11.375rem;
+    height: 2.75rem;
+    border-radius: 0.3125rem;
+    font-family: TCCC UnityText-Regular;
+    font-size: 1rem;
+    color: #000000;
+    padding-left: 15px;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+  }
+  .main-PopupContainer{
+
+    position: absolute;
+    left: 9%;
+    width: auto;
+    height: 75%;
+    /* new */
+    background: #FFFFFF;
+    border-radius: 0px 0.5rem 0.5rem 0px;
+    border-right: 0.2vw solid #99191D;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+    z-index: 111;
+    top:10%;
+  }
+  /* .menuArrow{
+    position: absolute;
+    background-image: url(/assets/Image/Coke_Beach_Left_panel_arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 7px;
+    height: 20px;
+    left: -0.6vw;
+    top: 3%;
+  } */
+  .popupLevel{
+    position: relative;
+    display: inline-block;
+    float: left;
+    height: 100%;
+    width: 16.5625rem;
+    border-radius: 0px 0.5rem 0.5rem 0px;
+    /* box-shadow: 0px 0px 5px rgb(0 0 0 / 10%); */
+  }
+  .popupLevelHeader {
+    height: 14%;
+    position: relative;
+  }
+  .popupHeaderText {
+    width: fit-content;
+ }
+ .popupLevelBody {
+  height: 86%;
+  background: #FFFFFF;
+  cursor: pointer;
+ }
+ .popupLevelBodySubContainer {
+  height: -webkit-fill-available;
+  background: #FFFFFF;
+
+  overflow: scroll;
+}
+.popupItem {
+  /* height: 3vh;
+  border-bottom: 1px solid black;
+  padding: 4px;
+  padding: 4px; */
+  margin-left: 0.5vw;
+  text-align: left;
+  background: #F7F7F7;
+  width: 93%;
+  height: 2.75rem;
+  border-radius: 0.3125rem;
+  font-family: TCCC UnityText-Regular;
+  font-size: 1rem;
+  color: #000000;
+  padding-left: 1.1vw;
+  /* padding-top: 3px; */
+  margin-bottom:1.5vh;
+}
+.popupItem:hover {
+  background : linear-gradient(90deg, rgba(225, 31, 38, 1) 0%, rgba(207, 30, 36, 1) 31.5%, rgba(159, 26, 30, 1) 94.66%, rgba(155, 26, 30, 1) 100%);
+  height : 2.75rem;
+  border-radius : 0.3125rem;
+  color: white;
+}
+.popupItemTextContainer {
+  width: 85%;
+  display: inline-block;
+  float: left;
+  height: 100%;
+  position: relative;
+}
+.popupText {
+  height: 4vh;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 4vh;
+}
+.popupItemArrowContainer {
+  width: 15%;
+  display: inline-block;
+  float: left;
+  height: 100%;
+  position: relative;
+}
+.nextArrowItem {
+  background-image: url(/assets/Image/Arrow.png);
+  width: 0.66vw;
+  height: 1.37vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.isMenuActive{
+  background-color: red;
+}
+
+.islevelOpened{
+  background-color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+  .menuArrow{
+    width: 0.1cm;
+    height: 0.3cm;
+    left: -0.11cm;
+    top: 7%;
+  }
+  }
+  
+  @media only screen and (min-width: 601px) {
+    .menuArrow{
+      width: 0.1cm;
+      height: 0.3cm;
+      left: -0.11cm;
+      top: 9%;
+      }
+  
+  }
+
+@media only screen and (min-width: 884px) {
+  .menuArrow{
+    width: 0.2cm;
+    height: 0.6cm;
+    left: -0.21cm;
+
+    }
+}
+@media only screen and (min-height: 380px) {
+  .menuArrow{
+ 
+    top: 8.1%;
+    }
+}
+@media only screen and (min-width: 1280px) {
+  .menuArrow{
+    width: 0.3cm;
+    height: 0.9cm;
+    left: -0.31cm;
+    }
+}
+@media only screen and (min-height:590px) {
+  .menuArrow{
+    top: 6.1%;
+    }
+}
+
+@media only screen and (min-width: 1366px){
+  .menuArrow{
+    width: 0.3cm;
+    height: 0.9cm;
+    left: -0.31cm;
+    }
+}
+@media only screen and (min-height: 650px){
+  .menuArrow{
+    top: 6.1%;
+    }
+}
+@media only screen and (min-height:720px) {
+  .menuArrow{
+    top: 4.1%;
+    }
+}
+@media only screen and (min-height: 768px){
+  .menuArrow{
+    top: 4.3%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+  .menuArrow{
+    width: 0.4cm;
+    height: 1.2cm;
+    left: -0.41cm;
+    }
+}
+@media only screen and (min-height: 770px) {
+  .menuArrow{
+    top: 5.3%;
+    }
+}
+@media only screen and (min-height: 900px) {
+  .menuArrow{
+    top: 3.6%;
+    }
+}
+
+@media only screen and (min-width: 1920px ) {
+  .menuArrow{
+    width: 0.4cm;
+    height: 1.2cm;
+    left: -0.41cm;
+    }
+}  
+@media only screen and (min-height: 950px ) {
+  .menuArrow{
+    top: 6.1%;
+    }
+}
+
+@media only screen and (min-height: 1080px ) {
+  .menuArrow{
+    top: 4.5%;
+    }
+}

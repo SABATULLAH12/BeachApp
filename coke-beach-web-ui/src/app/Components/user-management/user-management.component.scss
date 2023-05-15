@@ -1,0 +1,1108 @@
+
+  .MainContainer{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    cursor:default;
+   
+  }
+
+  .TopPanel{
+    background-image: url('/assets/Image/Coke_Beach_header BG.png');
+    width: 98.8%;
+    height: 10%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 1.2vh;
+    display:inline-flex;
+  }
+  .Coke_Logo{
+    width: 7%;
+    background-image: url('/assets/Image/Coke_Beach_Logo.png');
+    background-repeat: no-repeat;
+    background-size: 85%;
+    margin: 1vh;
+   }
+  .User_Profile{
+    width:26%;
+    display:inline-flex;
+  }
+  .User_Icon{
+    background-image: url('/assets/Image/Coke_Beach_user.png');
+    background-repeat: no-repeat;
+    background-size: 63%;
+    width: 13%;
+    position: relative;
+    top: 29%;
+  }
+  .Middle_Text_Container{
+    Width:57%;
+  }
+  .Middle_Text{
+    height: 100%;
+    Width: 50%;
+    font-family : TCCC UnityText-Regular;
+    font-weight: bold;
+    font-size: 1.6875rem;
+    color: #FFFFFF;
+    align-items: center;
+    position: relative;
+    left: 20%;
+    display: flex;
+   }
+  .Menu_Container{
+    Width:10%;
+    display: inline-flex;
+  }
+  .Home_Icon{
+    background-image: url('/assets/Image/coke_beach_home_i.png');
+    background-repeat: no-repeat;
+    background-size: 91%;
+    padding-right: 1vh;
+    width: 34%;
+    height: 60%;
+    margin: 11%;
+  }
+  .Home_Icon:hover{
+    background-image: url('/assets/Image/home_white_icon.png');
+  }
+  .Home_Icon:hover .HomeIconToolTipContainer{
+    visibility:visible;
+  }
+  .Logout_Icon{
+    background-image: url('/assets/Image/coke_beach_logout_i.png');
+    background-repeat: no-repeat;
+    background-size: 91%;
+    width: 36%;
+    height: 60%;
+    margin: 11%;
+  } 
+
+  .Logout_Icon:hover{
+    background-image: url('/assets/Image/logout_white_icon.png');
+  }
+  .Logout_Icon:hover  .LogoutIconToolTipContainer{
+    visibility: visible;
+  }
+  .Text_Container{
+    width:100%;
+    position: relative;
+    top:19%;
+  }
+  .Static_Text{
+    font-size : 1.25rem;
+    color : #FFFFFF;
+  }
+  .Email{
+    font-size : 1.25rem;
+    color : #FFFFFF;
+    font-weight : bold;
+  }
+
+  .Body_Content{
+    width: 98.8%;
+    height: 85%;
+    position: relative;
+    display: flex;
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px Solid #FFFFFF;
+    border-radius: 0.625rem;
+    margin: 1vh;
+  }
+
+  .Left_Section{
+    width: 18%;
+    height: 100%;
+    padding: 3vh;
+  }
+  .Right_Section{
+    width: 82%;
+    height: 100%;
+  }
+   .Search_Box_Container{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    display: inline-flex;
+  }
+  .Search_Box{
+    width: 84%;
+  }
+  .Search_Input{
+    background: #FFFFFF;
+    border: 0.5px Solid #000000;
+    height: 3.625rem;
+    border-radius: 0.4375rem;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+    width: 98%;
+    margin: 2.5vh;
+    font-size: 1.125rem;
+    color: #999999;
+    padding-left: 2vh;
+  }
+  .Search_Icon{
+    background-image: url('/assets/Image/Coke_Beach_search_icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: flex;
+    left: 79.8%;
+    top: 32.44%;
+    width: 3.4375rem;
+    height: 3.3125rem;
+    border-radius: 0.25rem;
+  }
+  .Excel_Export_Btn_Container{
+    width: 16%;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    user-select: none;
+  }
+  .Excel_Export_Btn{
+    background-image: url('/assets/Image/Coke_Beach_export button.png');
+    background-repeat: no-repeat;
+    background-size: 82%;
+    height: 100%;
+    user-select: none;
+  }
+  .Excel_Export_Btn_disable{
+    pointer-events:none;
+    opacity: 0.5;
+    width: 16%;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    user-select: none;
+  }
+  .Btn_Text{
+    position: relative;
+    top: 30%;
+    Left: 32%;
+    font-size: 1.625rem;
+    color: #3A7049;
+   }
+  .Search_Input{
+    background: #FFFFFF;
+    border: 0.5px Solid #000000;
+    height: 3.625rem;
+    border-radius: 0.4375rem;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+    width: 98%;
+    margin: 2.5vh;
+    font-size: 1.125rem;
+    color: #999999;
+    padding-left: 2vh;
+  }
+  .Search_Icon{
+    background-image: url('/assets/Image/Coke_Beach_search_icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: flex;
+    left: 79.8%;
+    top: 32.44%;
+    width: 3.4375rem;
+    height: 3.3125rem;
+    border-radius: 0.25rem;
+  }
+  .Users_Data_Table{
+    height: 84%;
+    margin: 2.5vh;
+  }
+
+  .Table_Header {
+    display:inline-flex;
+    width:99.9%;
+    height: 7%;
+    margin-bottom: 0.4vh;  
+  }
+  .Header_Item{
+    font-size: 1.125rem;
+    color: #808080;
+    background: rgba(255, 255, 255, 0.65);
+    height: 3.125rem;
+    box-shadow : 0px 0px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 0.5%;
+    display: inline-flex; 
+  }
+  .Sort_Icon{
+    background: url("/assets/Image/Coke_Beach_sort_icon.png") no-repeat center;
+    background-size: contain;
+    height: 73%;
+    position: relative;
+  }
+  .Edit_User{
+    position: relative;
+    left: -3%;
+    top: -59%;
+    background: #FFFFFF;
+    border: 1px Solid #FFFFFF;
+    width: 96%;
+    height: 7.1875rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+    padding-top: 0.3vh;
+  }
+  .Edit_Icon{
+    width: 14%;
+    height: 53%;
+  }
+  .Selected_Roles{
+    width: 96%;
+    height: 26%;
+    font-size: 1.125rem;
+    color: #000000;
+    border-bottom: 1px solid black;
+    text-align: start;
+    display: inline-flex;
+  }
+
+  .Column_Name{
+    height: 100%;
+    position: relative;
+    padding-left: 2vh;
+  }
+  
+  .Table_Row{
+    display:inline-flex;
+    width:100%;
+    height: 8.5%;
+  }
+
+  .Table_Row:nth-child(odd) {
+    background : #FAFAFA;
+  }
+  .Table_Row:nth-child(even) {
+     background : rgba(255, 255, 255, 0.65);
+  }
+
+  .Table_Data{
+    height: 3.375rem;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 10%);
+    padding-top: 0.5%;
+    padding-left: 1.6vh;
+  }
+  .Table_Row:hover{
+    height : 9%;
+    background : #FAFAFA;
+    box-shadow : 0px 0px 8px rgba(0, 0, 0, 0.1);
+  }
+  ::-webkit-scrollbar {
+    width: 0.2vw;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  .Table_Data_Container{
+    height: 95%;
+    width: 100%;
+    position: relative;
+    overflow: scroll;
+  }
+   
+  .table-content{
+    height:90%;
+    width:100%;
+    overflow-y:auto;
+  }
+
+  .Left_Shadow{
+    position: absolute;
+    background-image: url('/assets/Image/Coke_Beach_Shadow_02.png');
+    width: 0.2vw;
+    height: 100%;
+    z-index: 1111;
+  }
+  .Roles{
+    width: 61%;
+    height: 26%;
+    font-size: 1.125rem;
+    color: #000000;
+    margin-bottom: 0.7vh;
+    margin-top: 0.7vh;
+    padding-left: 1.4vh;
+  }
+  .Roles:hover{
+    font-size : 1rem;
+    color : #EA1D25;
+    background : linear-gradient(90deg, rgba(225, 31, 38, 0.05) 0%, rgba(207, 30, 36, 0.05) 31.5%, rgba(159, 26, 30, 0.05) 94.66%, rgba(155, 26, 30, 0.05) 100%);
+    width : 5rem;
+    height : 1.8125rem;
+    border-radius : 4px;
+  }
+  .ActiveRole{
+    background : linear-gradient(90deg, rgba(225, 31, 38, 0.05) 0%, rgba(207, 30, 36, 0.05) 31.5%, rgba(159, 26, 30, 0.05) 94.66%, rgba(155, 26, 30, 0.05) 100%);
+  }
+  .Up_Arrow{
+    background-image: url('/assets/Image/Coke_Beach_up_arrow.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    margin-top: 0.7vh;
+    width: 20%;
+  }
+  .Manage_Users_Menu{
+    width: 100%;
+    display: inline-flex;
+    background: #FFFFFF;
+    height: 3.6875rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+    margin-bottom: 10%;
+  }
+  .Manage_Users_Menu_Active{
+    width: 100%;
+    display: inline-flex;
+    background: linear-gradient(90deg, rgba(225, 31, 38, 1) 0%, rgba(207, 30, 36, 1) 31.5%, rgba(159, 26, 30, 1) 94.66%, rgba(155, 26, 30, 1) 100%);
+    height: 3.6875rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+    margin-bottom: 10%;
+  }
+  .Manage_Users_Icon{
+    width:20%;
+    background-image: url('/assets/Image/Coke_Beach_Manage_Users.png');
+    background-repeat: no-repeat;
+    background-size: 97%;
+    border-right: 2px solid #dfd8d8;
+  }
+  .Manage_Users_Icon_Active{
+    width:20%;
+    background-image: url('/assets/Image/Coke_Beach_Manage_Users_red.png');
+    background-repeat: no-repeat;
+    background-size: 97%;
+    border-right: 2px solid #dfd8d8;
+  }
+  .Manage_Users_Text{
+    width:80%;
+    font-size: 1.375rem;
+    color: #000000;
+    text-align: center;
+    display: grid;
+    align-items: center;
+  }
+  .Manage_Users_Text_Active{
+    font-size: 1.375rem;
+    color: #FFFFFF;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    width:80%
+    }
+  .User_Stats_Menu{
+    width: 100%;
+    display: inline-flex;
+    background: #FFFFFF;
+    height: 3.6875rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+  }
+  .User_Stats_Menu_Active{
+    width: 100%;
+    display: inline-flex;
+    background: linear-gradient(90deg, rgba(225, 31, 38, 1) 0%, rgba(207, 30, 36, 1) 31.5%, rgba(159, 26, 30, 1) 94.66%, rgba(155, 26, 30, 1) 100%);
+    height: 3.6875rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+  }
+  .User_Stats_Icon{
+    width:20%;
+    background-image: url('/assets/Image/Coke_Beach_User_Stats-.png');
+    background-repeat: no-repeat;
+    background-size: 97%;
+    border-right: 2px solid #dfd8d8;
+  }
+  .User_Stats_Icon_Active{
+    width:20%;
+    background-image: url('/assets/Image/Coke_Beach_User Stats_red.png');
+    background-repeat: no-repeat;
+    background-size: 97%;
+    border-right: 2px solid #dfd8d8;
+  }
+  .User_Stats_Text{
+    width:80%;
+    font-size: 1.375rem;
+    color: #000000;
+    text-align: center;
+    display: grid;
+    align-items: center;
+  }
+  .User_Stats_Text_Active{
+    width:80%;
+    font-size: 1.375rem;
+    color: #FFFFFF;
+    text-align: center;
+    display: grid;
+    align-items: center;
+  }
+  .User_Stats_Filter_Container{
+    background: #FFFFFF;
+    border: 0.5px Solid #AFAFAF;
+    width: 100%;
+    height: auto;
+    border-radius: 0px 0px 6px 6px;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+    padding-top: 2vh;
+    position: relative;
+    top: -0.7vh;
+    
+  }
+  .Time_Period_Filter_Container{
+    background: #F7F7F7;
+    border: 1px Solid rgba(137, 137, 137, 0.5);
+    width: 14.8125rem;
+    height: 4.75rem;
+    border-radius: 0.375rem;
+    position: relative;
+    left: 11%;
+    display: inline-flex;
+    
+  }
+  .Role_Filter_Container{
+    background: #F7F7F7;
+    border: 1px Solid rgba(137, 137, 137, 0.5);
+    width: 14.8125rem;
+    height: 3.2rem;
+    border-radius: 0.375rem;
+    position: relative;
+    left: 11%;
+    margin-top: 2vh;
+    display: inline-flex;
+  }
+  .Role_Icon{
+    background-image: url('/assets/Image/Coke_Beach_Role.png');
+    background-repeat: no-repeat;
+    background-size: 87%;
+    height: 65%;
+    width: 68%;
+    margin-top: 1.3vh;
+    margin-left: 1.5vh;
+    position: relative;
+  }
+  .Role_Text{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  .Role_Down_Arrow{
+    background-image: url('/assets/Image/Coke_Beach_down_arrow.png');
+    background-repeat: no-repeat;
+    background-size: 64%;
+    height: 49%;
+    width: 68%;
+    margin-top: 2.1vh;
+    margin-left: 1.9vh;
+    position: relative;
+  }
+  .Role_Up_Arrow{
+    background-image: url('/assets/Image/Coke_Beach_up_arrow.png');
+    background-repeat: no-repeat;
+    background-size: 64%;
+    height: 49%;
+    width: 68%;
+    margin-top: 2.1vh;
+    margin-left: 1.9vh;
+    position: relative;
+  }
+  .Time_Period_Icon{
+    background-image: url('/assets/Image/Coke_Beach_Time Period.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    height: 65%;
+    width: 68%;
+    margin-top: 1.8vh;
+    margin-left: 1.5vh;
+    position: relative;
+  }
+  .Time_Period_Text_Container{
+   width:50%;
+   height: 100%;
+  }
+ 
+  .Time_Period_Text{
+    font-size: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #000000;
+    display: grid;
+    align-items: center;
+    height: 50%;
+    border-bottom: 1px solid #d8caca;
+    font-weight: bold;
+  }
+  .Selected_Time_Period_Text{
+    height: 50%;
+    text-align: center;
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 100;
+    display: grid;
+    align-items: center;
+  }
+  .Down_Arrow_Icon{
+    background-image: url('/assets/Image/Coke_Beach_down_arrow.png');
+    background-repeat: no-repeat;
+    background-size: 64%;
+    height: 49%;
+    width: 68%;
+    margin-top: 3.3vh;
+    margin-left: 1.9vh;
+    position: relative;
+  }
+  .Up_Arrow_Icon{
+    background-image: url('/assets/Image/Coke_Beach_up_arrow.png');
+    background-repeat: no-repeat;
+    background-size: 64%;
+    height: 49%;
+    width: 68%;
+    margin-top: 3.3vh;
+    margin-left: 1.9vh;
+    position: relative;
+  }
+  .Submit_Btn_Container{
+    position: relative;
+    left: 22%;
+    background: linear-gradient(90deg, rgba(155, 162, 172, 1) 0%, rgba(114, 115, 117, 1) 100%);
+    width: 10.5625rem;
+    height: 2.625rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 15%);
+    display:inline-flex;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+  }
+  .Reset_Btn_Container{
+    position: relative;
+    left: 22%;
+    background: linear-gradient(90deg, rgba(155, 162, 172, 1) 0%, rgba(114, 115, 117, 1) 100%);
+    width: 10.5625rem;
+    height: 2.625rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 15%);
+    display:inline-flex;
+    margin-bottom: 2vh;
+  }
+  .Submit_Btn_Text{
+    font-weight: bold;
+    font-size: 1.3125rem;
+    color: #FFFFFF;
+    width: 67%;
+    display: grid;
+    text-align: center;
+    align-items: center;
+  }
+  .Reset_Btn_Text{
+    font-weight: bold;
+    font-size: 1.3125rem;
+    color: #FFFFFF;
+    width: 60%;
+    display: grid;
+    text-align: center;
+    align-items: center;
+  }
+  .Submit_Btn_Icon{
+    background-image: url('/assets/Image/Coke_Beach_submit_icon.png');
+    background-repeat: no-repeat;
+    background-size: 93%;
+    width: 17%;
+    margin-top: 1vh;
+    margin-left: 1.4vh;
+  }
+  .Reset_Btn_Icon{
+    background-image: url('/assets/Image/reset_btn_icon.png');
+    background-repeat: no-repeat;
+    background-size: 93%;
+    width: 17%;
+    margin-top: 1vh;
+    margin-left: 1.4vh;
+  }
+  .Time_Period_Slider_Container{
+    background: #F7F7F7;
+    border: 1px Solid rgba(137, 137, 137, 0.5);
+    width: 14.8125rem;
+    height: 9.75rem;
+    border-radius: 0.375rem;
+    border-radius: 0px 0px 6px 6px;
+    box-shadow: 0px 0px 1px rgb(0 0 0 / 10%);
+    position: relative;
+    left: 11%;
+    top: -0.8vh;
+  }
+  .Role_Options_Container{
+    width: 14.8125rem;
+    height: 7rem;
+    position: relative;
+    left: 11%;
+  }
+  .Role_Options{
+    height: 45%;
+    display: inline-flex;
+    width: 100%;
+    padding-top: 1vh;
+    padding-left: 2.1vh;
+    color : #000000;
+    border-bottom: 1px solid #d8caca;
+    margin-top: 1vh;
+   
+  }
+  .ActiveRole{
+    height: 45%;
+    display: inline-flex;
+    width: 100%;
+    padding-top: 1vh;
+    padding-left: 2.1vh;
+    color: #FFFFFF;
+    margin-top: 1vh;
+    border-radius: 0.3125rem;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+    border-bottom: 1px solid #d8caca;
+    background: linear-gradient(90deg, rgba(225, 31, 38, 1) 0%, rgba(207, 30, 36, 1) 31.5%, rgba(159, 26, 30, 1) 94.66%, rgba(155, 26, 30, 1) 100%);
+  }
+  .Admin_Role_Icon{
+    width: 14%;
+    background-image: url(/assets/Image/Coke_Beach_Admin-.png);
+    background-repeat: no-repeat;
+    background-size: 64%;
+    height: 100%;
+  }
+  .Admin_Role_Icon_Active{
+    width: 14%;
+    background-image: url(/assets/Image/Coke_Beach_Admin_Active.png);
+    background-repeat: no-repeat;
+    background-size: 64%;
+    height: 100%;
+  }
+  .Admin_Role_Text{
+    width:75%;
+    font-size : 1rem;
+    padding-top: 0.4vh;
+  }
+  .Basic_Role_Icon{
+    width:14%;
+    background-image: url('/assets/Image/Coke_Beach_Basic.png');
+    background-repeat: no-repeat;
+    background-size: 64%;
+    height: 100%;
+  }
+  .Basic_Role_Icon_Active{
+    width:14%;
+    background-image: url('/assets/Image/Coke_Beach_Basic_Active.png');
+    background-repeat: no-repeat;
+    background-size: 64%;
+    height: 100%;
+  }
+  .Basic_Role_Text{
+    width:75%;
+    font-size : 1rem;
+    padding-top: 0.4vh;
+  }
+  .HomeIconToolTipContainer{
+    position: absolute;
+    width: 8%;
+    height: 5%;
+    top: 9.8%;
+    left: 90.9%;
+    z-index: 11;
+    visibility: hidden;
+  }
+  .LogoutIconToolTipContainer{
+    position: absolute;
+    width: 8%;
+    height: 5%;
+    top: 9.8%;
+    left: 90.9%;
+    z-index: 11;
+    visibility: hidden;
+  }
+  .ArrowContainer{
+    background-image: url('/assets/Image/white_tooltip_arrow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 26%;
+    height: 32%;
+  }
+  .TextContainer{
+    height: 63%;
+    width: 98%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+    border-radius: 0px 6px 6px 0px;
+    border-right: 2px solid rgba(155, 26, 30, 1);
+    font-family: TCCC UnityText-Light;
+    font-size: 1rem;
+    font-weight: Regular;
+    color: #000000;
+    align-items: center;
+    display: grid;
+    text-align: center;
+  }
+  /* time period */
+  ::ng-deep {
+    .customSlider.ngx-slider {
+      margin: 6vh 0 2vh;
+    }
+    .custom-slider.ngx-slider .ngx-slider-bar-wrapper {
+      margin-top: 0px;
+      padding-top: 0px;
+    }
+    .customSlider.ngx-slider .ngx-slider-bar {
+      // background : rgba(239, 239, 239, 1);
+      background: transparent;
+      //height: 8px;
+      height:1.6vh;
+    }
+  
+    .barContainer{
+      position: absolute;
+      background : rgba(239, 239, 239, 1);
+      width: 100%;
+      height:1.6vh;
+      top:6vh;
+    }
+  
+    .customSlider.ngx-slider .ngx-slider-floor {
+      display: none;
+    }
+  
+    .customSlider.ngx-slider .ngx-slider-ceil {
+      display: none;
+    }
+  
+    .customSlider.ngx-slider .ngx-slider-model-value {
+      display: none;
+    }
+  
+    .custom-slider .ngx-slider .ngx-slider-selection {
+      background: orange;
+    }
+  
+    .customSlider.ngx-slider .ngx-slider-pointer {
+      background-color: transparent;
+      border-radius: 0px;
+      background-image: url(/assets/Image/Coke_Beach_slider_bottle_icon.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      width: 3.7vw;
+      height: 7.5vh;
+      top: -5.9vh;
+      outline:none;
+      background-size: cover;
+      background-position-x: -0.14cm;
+      cursor: pointer;
+      width: 1cm;
+      height: 1.3cm;
+      top: calc((1.3cm - 1.6vh)*-1);
+    }
+    .slider-container{
+      width: 86%;
+      height: 56%;
+      position: relative;
+      left: 7%;
+      top:-10%;
+    }
+    .customSlider.ngx-slider .ngx-slider-pointer:after {
+      display: none;
+    }
+  
+    .custom-slider .ngx-slider .ngx-slider-bubble {
+      bottom: 14px;
+    }
+  
+    .custom-slider .ngx-slider .ngx-slider-limit {
+      font-weight: bold;
+      color: orange;
+    }
+  
+    .customSlider.ngx-slider .ngx-slider-ticks {
+      top: 8px;
+    }
+  
+    .customSlider.ngx-slider .ngx-slider-tick {
+      background-color: #999;
+      margin-left: 10%;
+      border-radius: unset;
+      width: 2px;
+      height: 9px;
+     
+    }
+  .ticks {
+    position: relative;
+    left: 0.5cm;
+    width: calc(100% - 1cm);
+    height: 15%;
+  }
+   .tick {
+    position: absolute;
+    width: 2px;
+    height: 9px;
+    background-color: #999;
+    transform: translateX(-1px);
+  }
+  .ui-slider-pip{
+    position: absolute;
+    width: 2em;
+    height: 1em;
+    line-height: 1em;
+    transform: translateX(-1em);
+    top:-0.5vh;
+  }
+  
+  .ui-slider-pip .ui-slider-line{
+    display: block;
+    position: relative;
+    width: 0.15rem;
+    height: 1vh;
+    background-color: #999;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .ui-slider-pip .ui-slider-label{
+    display: block;
+    width: 5em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0.2vh;
+    text-align: center;
+    font-size: 0.5625rem;
+    color: #000000;
+    
+  }
+  .ui-slider-pip .ui-slider-tip-label{
+    position: absolute;
+    display: block;
+    width: 2.475vw;
+    margin-left: -1.6vw;
+    left: 70%;
+    height: auto;
+    line-height: 1.6rem;
+    background: black;
+    border-radius: 0.3rem;
+    border: 1px solid #888;
+    text-align: center;
+    font-size: 0.5625rem;
+    color: #000000;
+    top: 2vh;
+    font-weight: bold;
+    color: white;
+  }
+  .ui-slider-pip .ui-slider-tip-label:before{
+    content: " ";
+    width: 0;
+    height: 0;
+    border: 5px solid rgba(255,255,255,0);
+    position: absolute;
+    bottom: -2vh;
+    left: 50%;
+    border: 1vh solid rgba(255,255,255,0);
+    border-bottom-color: black;
+    top: -2vh;
+    transform: translateX(-50%);
+  }
+  .ui-slider-pip .ui-slider-tip-label:after{
+  }
+  .dotts {
+    position: absolute;
+    left: 0.5cm;
+    width: calc(100% - 1cm);
+    height: 4%;
+    top: 6.8vh;
+  }
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+  .customSlider.ngx-slider .ngx-slider-pointer{
+    width:0.5cm;
+    height:0.65cm;
+    top: calc((0.65cm - 1.6vh)*-1);
+    background-position-x: -0.07cm;
+  }
+  .ticks{
+    width: calc(100% - 0.5cm);
+    left: 0.25cm;
+  }
+  .dotts{
+    width: calc(100% - 0.5cm);
+    left: 0.25cm;
+  }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 601px) {
+  .customSlider.ngx-slider .ngx-slider-pointer{
+    width:0.5cm;
+    height:0.65cm;
+    top: calc((0.65cm - 1.6vh)*-1);
+    background-position-x: -0.07cm;
+  }
+  .ticks{
+    width: calc(100% - 0.5cm);
+    left: 0.25cm;
+  }
+  .dotts{
+    width: calc(100% - 0.5cm);
+    left: 0.25cm;
+  }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+  
+  .customSlider.ngx-slider .ngx-slider-pointer{
+    width:0.5cm;
+    height:0.65cm;
+    top: calc((0.65cm - 1.6vh)*-1);
+    background-position-x: -0.07cm;
+  }
+  .ticks{
+    width: calc(100% - 0.5cm);
+    left: 0.25cm;
+  }
+  .dotts{
+    width: calc(100% - 0.5cm);
+    left: 0.25cm;
+  }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+  
+  .customSlider.ngx-slider .ngx-slider-pointer{
+    width:0.8cm;
+    height:1.04cm;
+    top: calc((1.04cm - 1.6vh)*-1);
+    background-position-x: -0.12cm;
+  }
+  .ticks{
+    width: calc(100% - 0.8cm);
+    left: 0.4cm;
+  }
+  .dotts{
+    width: calc(100% - 0.8cm);
+    left: 0.4cm;
+  }
+  
+  }
+  
+  @media only screen and (min-width: 1326px) {
+  
+  .customSlider.ngx-slider .ngx-slider-pointer{
+    width: 1cm;
+    height: 1.3cm;
+    top: calc((1.3cm - 1.6vh)*-1);
+    background-position-x: -0.14cm;
+  }
+  .ticks{
+  width: calc(100% - 1cm);
+  left: 0.5cm;
+  }
+  .dotts{
+  width: calc(100% - 1cm);
+  left: 0.5cm;
+  }
+  }
+  
+  @media only screen and (min-width: 1768px) {
+  
+  .customSlider.ngx-slider .ngx-slider-pointer{
+    width: 1.5cm;
+    height: 1.95cm;
+    top: calc((1.95cm - 1.6vh)*-1);
+    background-position-x: -0.21cm;
+  }
+  .ticks{
+  width: calc(100% - 1.5cm);
+  left: 0.75cm;
+  }
+  .dotts{
+  width: calc(100% - 1.5cm);
+  left: 0.75cm;
+  }
+  }
+  
+  @media only screen and (min-width: 1920px) {
+  
+  .customSlider.ngx-slider .ngx-slider-pointer{
+    width: 2cm;
+    height: 2.6cm;
+    top: calc((2.6cm - 1.6vh)*-1);
+    background-position-x: -0.28cm;
+  }
+  .ticks{
+  width: calc(100% - 2cm);
+  left: 1cm;
+  }
+  .dotts{
+  width: calc(100% - 2cm);
+  left: 1cm;
+  }
+  }
+  }
+  
+  
+  .ui-slider-dotContainer {
+    position: absolute;
+    width: 2em;
+    height: 1em;
+    line-height: 1em;
+    transform: translateX(-1em);
+  }
+  .ui-slider-dot {
+    display: block;
+    position: relative;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 0.4rem;
+    background-color: #999;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  span.ui-slider-line:hover{
+  visibility: hidden;
+  }
+  .timpePeriodTypes{
+    margin-top: 2%;
+    height: 30%;
+    box-sizing: border-box;
+    width: 86%;
+    margin-left: 7%;
+    display: flex;
+    column-gap: 6%;
+    padding-top: 2%;
+  }
+  .timePeriodType {
+  
+    display: inline-block;
+    width: 5rem;
+    height: 2.25rem;
+    border-radius: 0.375rem;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    color: #707070;
+  }
+  .centerBox{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: fit-content;
+    cursor: pointer;
+  }
+  .active_time_period_type{
+    background : rgba(234, 29, 37, 0.15);
+    color:red;
+  }
+  .nonactive_time_period_type{
+    background: rgba(239, 239, 239, 1);
+  
+  }
+  .timeperiodDisabled{
+    background: rgba(220,220,220,1);
+    color: white;
+  }
+  
+  
+  

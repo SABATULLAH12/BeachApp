@@ -1,0 +1,150 @@
+
+   .Right_Section{
+    height: 100%;
+   }
+   .Search_Box_Container{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    display: inline-flex;
+   }
+   .Search_Box{
+    width: 84%;
+   }
+   .Search_Input{
+    background: #FFFFFF;
+    border: 0.5px Solid #000000;
+    height: 3.625rem;
+    border-radius: 0.4375rem;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+    width: 98%;
+    margin: 2.5vh;
+    font-size: 1.125rem;
+    color: #999999;
+    padding-left: 2vh;
+  }
+  .Search_Icon{
+    background-image: url('/assets/Image/Coke_Beach_search_icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: flex;
+    left: 79.8%;
+    top: 32.44%;
+    width: 3.4375rem;
+    height: 3.3125rem;
+    border-radius: 0.25rem;
+  }
+  .Excel_Export_Btn_Container{
+    width: 16%;
+    margin-top: 1vh;
+    margin-left: 1vh;
+  }
+   .Excel_Export_Btn{
+    background-image: url('/assets/Image/Coke_Beach_export button.png');
+    background-repeat: no-repeat;
+    background-size: 82%;
+    height: 100%;
+   }
+   .Excel_Export_Btn_disable{
+    pointer-events:none;
+    opacity: 0.5;
+    width: 16%;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    user-select: none;
+  }
+   .Btn_Text{
+    position: relative;
+    top: 25%;
+    Left: 32%;
+    font-size: 1.625rem;
+    color: #3A7049;
+   }
+  
+   .Users_Data_Table{
+    height: 84%;
+    margin: 2.5vh;
+   }
+  
+  
+  .Table_Header {
+    display: inline-flex;
+    width: 99.9%;
+    height: 7%;
+    margin-bottom: 0.4vh;
+  }
+  .Header_Item{
+    font-size: 1.125rem;
+    color: #808080;
+    background: rgba(255, 255, 255, 0.65);
+    height: 3.125rem;
+    box-shadow : 0px 0px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 0.5%;
+    display: inline-flex; 
+  }
+  .Sort_Icon{
+    background: url("/assets/Image/Coke_Beach_sort_icon.png") no-repeat center;
+    background-size: contain;
+    height: 73%;
+    position: relative;
+  }
+  .Column_Name{
+    height: 100%;
+    position: relative;
+    padding-left: 2vh;
+  }
+  
+  .Table_Row{
+    display:inline-flex;
+    width:100%;
+    height: 8.5%;
+  }
+
+  .Table_Row:nth-child(odd) {
+    background : #FAFAFA;
+  }
+  .Table_Row:nth-child(even) {
+     background : rgba(255, 255, 255, 0.65);
+  }
+
+  .Table_Data{
+    height: 3.375rem;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 10%);
+    padding-top: 0.5%;
+    padding-left: 1.6vh;
+  }
+  .Table_Row:hover{
+    background : #FAFAFA;
+    height : 9%;
+    box-shadow : 0px 0px 8px rgba(0, 0, 0, 0.1);
+  }
+  ::-webkit-scrollbar {
+    width: 0.2vw;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  .Table_Data_Container{
+    height: 95%;
+    width: 100%;
+    position: relative;
+    overflow: scroll;
+  }
+  .table-content{
+    height:90%;
+    width:100%;
+    overflow-y:auto;
+  }
+ 
+  .Left_Shadow{
+    position: absolute;
+    background-image: url('/assets/Image/Coke_Beach_Shadow_02.png');
+    width: 0.2vw;
+    height: 100%;
+    z-index: 1111;
+  }
+  
+  

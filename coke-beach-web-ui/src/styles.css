@@ -1,0 +1,156 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #EDEEEE;
+    line-height: unset;
+}
+/* html{
+  font-size: 13px;
+} */
+html,body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+  font-family: "TCCC UnityText-Regular";
+  src: url(assets/font/CustomFont/TCCC-UnityTextRegular.ttf)  format('truetype');
+}
+@font-face {
+  font-family: "TCCC UnityText-Light";
+  src: url(assets/font/CustomFont/TCCC-UnityTextLight.ttf)  format('truetype');
+}
+@font-face {
+  font-family: "TCCC UnityText-Medium";
+  src: url(assets/font/CustomFont/TCCC-UnityTextMedium.ttf)  format('truetype');
+}
+.centerBox{
+  position: relative;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.horCenterBox{
+  position: relative;
+  top:0%;
+  left:50%;
+  transform: translate(-50%,0%);
+}
+.verCenterBox{
+  position: relative;
+  top:50%;
+  left:0%;
+  transform: translate(0%,-50%);
+}
+.menuArrow {
+  position: absolute;
+  background-image: url(/assets/Image/Coke_Beach_Left_panel_arrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 0.66vw;
+  height: 4.11vh;
+  left: -0.7vw;
+  top: 3%;
+}
+.main-PopupContainer{
+
+  position: absolute;
+  left: 9%;
+  width: auto;
+  height: 75%;
+  /* new */
+  background: #FFFFFF;
+  border-radius: 0px 0.5rem 0.5rem 0px;
+  border-right: 3px solid #99191D;
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+  z-index: 111;
+  top:10%;
+  padding-right:0.25vw;
+}
+
+
+.activeMenuItem{
+  background : linear-gradient(90deg, rgba(225, 31, 38, 1) 0%, rgba(207, 30, 36, 1) 31.5%, rgba(159, 26, 30, 1) 94.66%, rgba(155, 26, 30, 1) 100%) !important;
+  color: white !important;
+}
+
+.activeText{
+  color: red;
+}
+
+.activeArrowContainer{
+  background : linear-gradient(90deg, rgba(237, 28, 36, 0.1) 0%, rgba(219, 29, 35, 0.1) 32.29%, rgba(171, 30, 34, 0.1) 97.05%, rgba(169, 30, 34, 0.1) 100%);
+}
+.activeNextArrowItem{
+  background-image: url(/assets/Image/ActiveArrow.png);
+  width: 9px;
+  height: 9px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.popupRightShadow{
+  position: absolute;
+  background-image: url(assets/Image/Coke_Beach_Shadow_02.png);
+  width: 0.2vw;
+  right: -0.2vw;
+  height: 100%;
+  z-index: 1111;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+
+  html{
+    font-size: 4px;
+    /* display: none; */
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+
+  html{
+    font-size: 5px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  html{
+    font-size: 7px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  html{
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 1326px) {
+
+  html{
+    font-size: 11px;
+  }
+}
+
+@media only screen and (min-width: 1768px) {
+
+  html{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+
+  html{
+    font-size: 20px;
+  }
+}
+
+

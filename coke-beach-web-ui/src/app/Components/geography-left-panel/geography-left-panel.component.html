@@ -1,0 +1,75 @@
+<div class="main-PopupContainer">
+    <div class="menuArrow"></div>
+    <div class="popupLevel">
+      <div class="popupRightShadow"></div>
+        <!-- <div class="popupLevelHeader">
+            <div class="popupHeaderText centerBox">
+                Category
+            </div>
+        </div> -->
+        <div class="popupLevelBody" style="margin-top:15%;height:93.2%;">
+            <div class="popupLevelBodySubContainer">
+                <div   [ngClass]="{'popupItem':true, 'activeMenuItem':(item.isSelected==true)}"  *ngFor="let item of levelOneData">
+                    <div (click)="getGeographySelectionData(item.id, item.isSelectable, 1)"
+                        class="popupItemTextContainer">
+                        <div  [ngClass]="{'activeText':(checkActiveClass(item))}" class="popupText verCenterBox" title="{{item.text}}">
+                            {{item.text}}
+                        </div>
+                    </div>
+                    <div *ngIf="item.hasChild" [ngClass]="{'activeArrowContainer':(checkActiveClass(item))}" (click)="openNextLevelPopUp(item.id, 2)" class="popupItemArrowContainer">
+                        <div class="centerBox" [ngClass]="(checkActiveClass(item))?'activeNextArrowItem':'nextArrowItem'"></div>
+                    </div>
+                    <!-- <div *ngIf="item.hasChild" [ngClass]="{'activeArrowContainer':(checkActiveClass(item))}" [ngStyle]="{'background-color': (item.isChildOpened==true) ? '#73c7af' : 'inherit'}" (click)="openNextLevelPopUp(item.id, 2)" class="popupItemArrowContainer">
+                      <div class="nextArrowItem centerBox"></div>
+                  </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="isLevelTwoSelected" class="popupLevel">
+      <div class="popupRightShadow"></div>
+        <!-- <div class="popupLevelHeader">
+            <div class="popupHeaderText centerBox">
+
+            </div>
+        </div> -->
+        <div class="popupLevelBody" style="margin-top:15%;height:93.2%;">
+            <div class="popupLevelBodySubContainer">
+                <div  [ngClass]="{'popupItem':true, 'activeMenuItem':(item.isSelected==true)}"  *ngFor="let item of levelTwoFilteredData">
+                    <div (click)="getGeographySelectionData(item.id, item.isSelectable, 2)"
+                        class="popupItemTextContainer" >
+                        <div   [ngClass]="{'activeText':(checkActiveClass(item))}"  class="popupText verCenterBox" title="{{item.text}}">
+                            {{item.text}}
+                        </div>
+                    </div>
+                    <div *ngIf="item.hasChild"   [ngClass]="{'activeArrowContainer':(checkActiveClass(item))}"  (click)="openNextLevelPopUp(item.id, 3)" class="popupItemArrowContainer">
+                        <div class="centerBox" [ngClass]="(checkActiveClass(item))?'activeNextArrowItem':'nextArrowItem'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="isLevelThreeSelected" class="popupLevel">
+        <div class="popupRightShadow"></div>
+        <!-- <div class="popupLevelHeader">
+            <div class="popupHeaderText centerBox">
+                Category2
+            </div>
+        </div> -->
+        <div class="popupLevelBody"  style="margin-top:15%;height:93.2%;">
+            <div class="popupLevelBodySubContainer">
+                <div [ngClass]="{'popupItem':true, 'activeMenuItem':(item.isSelected==true)}" *ngFor="let item of levelThreeFilteredData">
+                    <div (click)="getGeographySelectionData(item.id, item.isSelectable, 3)"
+                        class="popupItemTextContainer" >
+                        <div class="popupText verCenterBox" title="{{item.text}}">
+                            {{item.text}}
+                        </div>
+                    </div>
+                    <div *ngIf="item.hasChild" class="popupItemArrowContainer">
+                        <div class="centerBox" [ngClass]="(checkActiveClass(item))?'activeNextArrowItem':'nextArrowItem'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
