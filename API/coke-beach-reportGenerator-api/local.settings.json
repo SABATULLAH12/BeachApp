@@ -1,0 +1,13 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=sabeacheus2dev01;AccountKey=0z0PxK4JFopusVc4RO9+MEgJQP8r1LK/TsGO1ETKn6e2JILfnQRLFHZ434EBGliuBPN5pX2daS3I+AStMua7Jw==;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    //"SqlConnectionString": "Data Source=beachdbserver.database.windows.net;Initial Catalog=Beach_Dev_DB;Persist Security Info=True;User ID=sqladm_beachdb;Password=N0vember@112022$$##;Encrypt=True;",
+    "SqlConnectionString": "Data Source=beachdbserver.database.windows.net;Initial Catalog=Beach_Final;Persist Security Info=True;User ID=sqladm_beachdb;Password=N0vember@112022$$##;Encrypt=True;",
+    "InputContainerName": "beach-dev-input",
+    "OutputContainerName": "beach-dev-output",
+    "ImagesContainer": "beach-dev-logo"
+  },
+  "Host": { "CORS": "*" }
+}
